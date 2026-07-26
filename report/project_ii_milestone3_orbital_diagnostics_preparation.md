@@ -1,8 +1,9 @@
-# Project 3 Milestone 3: Orbital Diagnostics / Angular Momentum Preparation
+# Project II — Orbital Dynamics
+## Milestone 3: Orbital Diagnostics / Angular Momentum Preparation
 
 ## 1. Purpose
 
-This milestone prepares orbital diagnostics for the Project 3 candidate sample. The intended scientific target is to move from orbit-input candidates toward angular-momentum and orbital-classification analysis.
+This milestone prepares orbital diagnostics for the Project II candidate sample. The intended scientific target is to move from orbit-input candidates toward angular-momentum and orbital-classification analysis.
 
 During this milestone, the input table was inspected and found to contain Galactocentric velocity components but no valid parallax or distance information for the selected candidates. Because angular momentum requires both position and velocity, this milestone does not force an invalid angular-momentum calculation. Instead, it creates a readiness-aware orbital diagnostics table and explicitly marks which quantities are available and which require additional distance information.
 
@@ -10,7 +11,7 @@ During this milestone, the input table was inspected and found to contain Galact
 
 Input file:
 
-    data/processed/project3_orbit_input_candidates.csv
+    data/processed/project_ii_orbit_input_candidates.csv
 
 The input file contains 27 candidate rows and includes:
 
@@ -101,13 +102,13 @@ These flags preserve useful candidate-level information for later orbit analysis
 
 Main output table:
 
-    data/processed/project3_orbital_diagnostics_candidates.csv
+    data/processed/project_ii_orbital_diagnostics_candidates.csv
 
 Generated figures:
 
-    figures/project3_orbital_diagnostics_velocity_summary.png
-    figures/project3_orbital_diagnostics_feh_velocity.png
-    figures/project3_orbital_diagnostics_readiness_summary.png
+    figures/project_ii_orbital_diagnostics_velocity_summary.png
+    figures/project_ii_orbital_diagnostics_feh_velocity.png
+    figures/project_ii_orbital_diagnostics_readiness_summary.png
 
 ## 5. Figure descriptions
 
@@ -125,7 +126,7 @@ The readiness-summary figure shows how many candidates have Galactocentric veloc
 
 ## 6. Scientific interpretation
 
-This milestone provides an important data-quality result: the current Project 3 candidate set has useful Galactocentric velocity information but lacks the position information required for angular-momentum analysis.
+This milestone provides an important data-quality result: the current Project II candidate set has useful Galactocentric velocity information but lacks the position information required for angular-momentum analysis.
 
 This means the sample is suitable for velocity-space candidate inspection, but not yet suitable for physically meaningful Lz, Lperp, Ltot, orbital inclination, or disk/halo orbit classification.
 
@@ -161,4 +162,4 @@ Only after this distance-recovery step should the project proceed to full orbit 
 
 ## 9. Milestone status
 
-Project 3 Milestone 3 is complete as a readiness-aware orbital diagnostics preparation milestone once the notebook, output CSV, figures, and report are committed.
+Project II Milestone 3 is complete as a readiness-aware orbital diagnostics preparation milestone once the notebook, output CSV, figures, and report are committed.

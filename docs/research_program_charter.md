@@ -144,9 +144,9 @@ This shared structure ensures that the repository develops as a coherent scienti
 
 The existing repository already contains the early foundations of this research program:
 
-- The previous Project 1 maps to Project I — Data Foundation.
-- The previous Project 2 maps mainly to Project V — Computational Discovery.
-- The current Project 3 work maps to Project II — Orbital Dynamics.
+- Historical development label: Project 1. Current research-program mapping: Project I — Data Foundation.
+- Historical development label: Project 2. Current research-program mapping: Project V — Computational Discovery.
+- Historical development label: Project 3. Current research-program mapping: Project II — Orbital Dynamics.
 
 During the transition, the repository will remain in its current flat structure. Large directory restructuring is intentionally postponed until the research outputs are stable.
 

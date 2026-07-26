@@ -1,24 +1,24 @@
-# Project 3 Milestone 1: Orbital Characterization Setup
+# Project II Milestone 1: Orbital Characterization Setup
 
 ## 1. Milestone objective
 
-Project 3 extends the Gaia-LAMOST Galactic Archaeology Project from candidate discovery and cross-method validation into orbital characterization.
+Project II extends the Gaia-LAMOST Galactic Archaeology Project from candidate discovery and cross-method validation into orbital characterization.
 
-Project 1 identified chemo-kinematic outlier candidates from Gaia DR3 and LAMOST cross-matched stellar data. Project 2 then tested these candidates in multiple unsupervised feature spaces using PCA, UMAP, and DBSCAN robustness diagnostics. Project 3 will use the strongest and most consistently supported candidates from Project 2 as the input set for orbit-analysis preparation.
+Project I identified chemo-kinematic outlier candidates from Gaia DR3 and LAMOST cross-matched stellar data. Project V then tested these candidates in multiple unsupervised feature spaces using PCA, UMAP, and DBSCAN robustness diagnostics. Project II will use the strongest and most consistently supported candidates from Project V as the input set for orbit-analysis preparation.
 
 The goal of this milestone is not yet to perform full orbit integration. Instead, Milestone 1 defines the required inputs, feature engineering plan, quality-control checks, orbital diagnostics, and interpretation framework needed for a scientifically cautious orbit-analysis stage.
 
-## 2. Primary Project 3 input tables
+## 2. Primary Project II input tables
 
-Project 3 should start from two existing candidate-level products.
+Project II should start from two existing candidate-level products.
 
 ### 2.1 Cross-method candidate evidence table
 
 Primary input:
 
-- data/processed/project2_candidate_cross_method_summary.csv
+- data/processed/project_v_candidate_cross_method_summary.csv
 
-This table contains 27 Project 2 candidates and records the cross-method evidence from PCA, UMAP, DBSCAN baseline labels, parameter-sweep noise stability, and combined chemo-kinematic features.
+This table contains 27 Project V candidates and records the cross-method evidence from PCA, UMAP, DBSCAN baseline labels, parameter-sweep noise stability, and combined chemo-kinematic features.
 
 Important columns include:
 
@@ -40,7 +40,7 @@ Important columns include:
 - umap_dbscan_noise_baseline
 - cross_method_noise_score
 
-This file should be treated as the Project 2 evidence layer.
+This file should be treated as the Project V evidence layer.
 
 ### 2.2 Candidate astrometric and spectroscopic summary table
 
@@ -48,7 +48,7 @@ Supporting input:
 
 - data/processed/gaia_lamost_candidate_summary_table.csv
 
-This table contains 27 Project 1/Project 2 candidates with sky position, parallax-derived distance proxy, LAMOST radial velocity, metallicity, photometry, and candidate level labels.
+This table contains 27 Project I/Project V candidates with sky position, parallax-derived distance proxy, LAMOST radial velocity, metallicity, photometry, and candidate level labels.
 
 Important columns include:
 
@@ -74,16 +74,16 @@ Important columns include:
 
 This file should be treated as the coordinate and stellar-parameter layer.
 
-## 3. Candidate definition for Project 3
+## 3. Candidate definition for Project II
 
-Project 3 should focus first on the strongest Project 2 candidates, defined by a combination of:
+Project II should focus first on the strongest Project V candidates, defined by a combination of:
 
 1. high cross_method_noise_score;
 2. PCA DBSCAN noise classification in baseline or robustness grids;
 3. UMAP support where available;
 4. high tangential velocity or high Galactocentric total velocity;
 5. low metallicity, especially [Fe/H] < -1;
-6. Project 1 candidate level, especially moderate and strong.
+6. Project I candidate level, especially moderate and strong.
 
 A practical first-pass ranking should use:
 
@@ -98,7 +98,7 @@ This ranking is not a final scientific classification. It is an input prioritiza
 
 ## 4. Required feature categories for orbital characterization
 
-Project 3 should prepare five groups of features.
+Project II should prepare five groups of features.
 
 ### 4.1 Observed astrometric features
 
@@ -133,11 +133,11 @@ Required parent-table columns to verify in Milestone 2:
 - parallax
 - rv
 
-If these are available, Project 3 can build a full phase-space table.
+If these are available, Project II can build a full phase-space table.
 
 ### 4.3 Galactocentric velocity features
 
-Project 1 already produced Galactocentric velocity diagnostics in the larger feature products. Project 3 should recover or recompute:
+Project I already produced Galactocentric velocity diagnostics in the larger feature products. Project II should recover or recompute:
 
 - galcen_vx
 - galcen_vy
@@ -157,7 +157,7 @@ The exact physical interpretation should remain cautious until the coordinate co
 
 ### 4.4 Orbital summary features
 
-Once the full 6D coordinates are available and a Galactic potential is selected, Project 3 should compute:
+Once the full 6D coordinates are available and a Galactic potential is selected, Project II should compute:
 
 - r_peri_kpc
 - r_apo_kpc
@@ -181,9 +181,9 @@ The minimum scientifically useful orbit-characterization table should contain:
 - Lz
 - orbit_class_preliminary
 
-### 4.5 Project 2 evidence features retained for interpretation
+### 4.5 Project V evidence features retained for interpretation
 
-Project 3 should not discard the Project 2 machine-learning evidence. Orbital interpretation should retain:
+Project II should not discard the Project V machine-learning evidence. Orbital interpretation should retain:
 
 - combined_chemo_kinematic_pc1
 - combined_chemo_kinematic_pc2
@@ -193,29 +193,29 @@ Project 3 should not discard the Project 2 machine-learning evidence. Orbital in
 - umap_noise_stability_fraction
 - cross_method_noise_score
 
-These columns allow Project 3 to ask whether the most orbitally extreme stars are also the strongest unsupervised outliers.
+These columns allow Project II to ask whether the most orbitally extreme stars are also the strongest unsupervised outliers.
 
-## 5. Proposed Project 3 output files
+## 5. Proposed Project II output files
 
 Milestone 2 and later should create the following files:
 
-- data/processed/project3_orbit_input_candidates.csv
-- data/processed/project3_orbital_feature_plan_summary.csv
-- data/processed/project3_orbital_parameters_candidates.csv
-- figures/project3_candidate_orbit_feature_matrix.png
-- figures/project3_eccentricity_vs_feh.png
-- figures/project3_zmax_vs_feh.png
-- figures/project3_lz_vs_energy_proxy.png
-- figures/project3_orbit_classes_summary.png
-- notebooks/13_project3_orbit_input_preparation.ipynb
-- notebooks/14_project3_orbital_characterization.ipynb
-- report/project3_milestone2_orbit_input_preparation.md
+- data/processed/project_ii_orbit_input_candidates.csv
+- data/processed/project_ii_orbital_feature_plan_summary.csv
+- data/processed/project_ii_orbital_parameters_candidates.csv
+- figures/project_ii_candidate_orbit_feature_matrix.png
+- figures/project_ii_eccentricity_vs_feh.png
+- figures/project_ii_zmax_vs_feh.png
+- figures/project_ii_lz_vs_energy_proxy.png
+- figures/project_ii_orbit_classes_summary.png
+- notebooks/13_project_ii_orbit_input_preparation.ipynb
+- notebooks/14_project_ii_orbital_diagnostics_preparation.ipynb
+- report/project_ii_milestone2_orbit_input_preparation.md
 
-The notebook numbering should continue from Project 2 and should not require directory restructuring.
+The notebook numbering should continue from Project V and should not require directory restructuring.
 
 ## 6. Quality-control requirements
 
-Before orbit integration, Project 3 must check several categories of quality.
+Before orbit integration, Project II must check several categories of quality.
 
 ### 6.1 Astrometric quality
 
@@ -247,7 +247,7 @@ Required checks:
 
 The current distance_pc appears to be a simple parallax-based distance proxy. For nearby or moderate-distance stars this can be useful as a first-pass estimate, but it should be treated cautiously for low-parallax stars.
 
-Project 3 should explicitly label this as a first-pass orbital characterization unless better distance estimates are added later.
+Project II should explicitly label this as a first-pass orbital characterization unless better distance estimates are added later.
 
 ### 6.4 Reproducibility checks
 
@@ -264,7 +264,7 @@ Every orbital output should record:
 
 ## 7. Scientific interpretation framework
 
-Project 3 should classify candidate orbits into preliminary categories.
+Project II should classify candidate orbits into preliminary categories.
 
 ### 7.1 Disk-like candidates
 
@@ -301,15 +301,15 @@ These would be especially important for accretion-remnant interpretation.
 
 ### 7.4 Ambiguous candidates
 
-Candidates with strong Project 2 outlier evidence but uncertain orbital parameters should remain flagged as ambiguous rather than forced into a physical class.
+Candidates with strong Project V outlier evidence but uncertain orbital parameters should remain flagged as ambiguous rather than forced into a physical class.
 
-## 8. Relationship to Project 1 and Project 2
+## 8. Relationship to Project I and Project V
 
-Project 1 established the chemo-kinematic candidate sample.
+Project I established the chemo-kinematic candidate sample.
 
-Project 2 showed that several candidates remain unusual in reduced feature spaces and under cross-method clustering diagnostics.
+Project V showed that several candidates remain unusual in reduced feature spaces and under cross-method clustering diagnostics.
 
-Project 3 adds physical orbit-level interpretation. This is the step that can connect the candidate list more directly to Galactic archaeology questions such as:
+Project II adds physical orbit-level interpretation. This is the step that can connect the candidate list more directly to Galactic archaeology questions such as:
 
 - Are the strongest chemo-kinematic outliers on disk-like or halo-like orbits?
 - Do low-metallicity, high-velocity candidates also have high eccentricity?
@@ -318,13 +318,13 @@ Project 3 adds physical orbit-level interpretation. This is the step that can co
 
 ## 9. Milestone 2 implementation plan
 
-Project 3 Milestone 2 should implement orbit-input preparation.
+Project II Milestone 2 should implement orbit-input preparation.
 
 Recommended tasks:
 
-1. merge project2_candidate_cross_method_summary.csv with gaia_lamost_candidate_summary_table.csv on source_id;
+1. merge project_v_candidate_cross_method_summary.csv with gaia_lamost_candidate_summary_table.csv on source_id;
 2. verify whether full proper-motion and Galactocentric velocity columns are present in parent feature tables;
-3. create project3_orbit_input_candidates.csv;
+3. create project_ii_orbit_input_candidates.csv;
 4. rank candidates by cross-method evidence and orbital-readiness;
 5. create a feature-availability matrix;
 6. document missing columns and assumptions;
@@ -334,4 +334,4 @@ Recommended tasks:
 
 Milestone 1 defines the orbit-analysis setup and feature plan. No directory restructuring was performed.
 
-The project is ready to proceed to Project 3 Milestone 2: Orbit Input Preparation.
+The project is ready to proceed to Project II Milestone 2: Orbit Input Preparation.

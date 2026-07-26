@@ -1,12 +1,13 @@
-# Project 3 Milestone 5 — Angular Momentum Diagnostics
+# Project II — Orbital Dynamics
+## Milestone 5: Angular Momentum Diagnostics
 
 ## Purpose
 
-This milestone extends the Project 3 distance-recovered candidate sample into Galactocentric angular-momentum space.
+This milestone extends the Project II distance-recovered candidate sample into Galactocentric angular-momentum space.
 
 The input file is:
 
-- `data/processed/project3_distance_recovered_candidates.csv`
+- `data/processed/project_ii_distance_recovered_candidates.csv`
 
 The main goal is to compute and diagnose:
 
@@ -18,7 +19,7 @@ These diagnostics prepare the candidate sample for later orbital-family interpre
 
 ## Input sample
 
-The angular-momentum calculation is based on the Project 3 distance-recovered candidate table.
+The angular-momentum calculation is based on the Project II distance-recovered candidate table.
 
 The final executed notebook used the recovered/Gaia-backed columns with non-null astrometric and velocity information:
 
@@ -33,7 +34,7 @@ All 27 distance-recovered candidates passed the angular-momentum input-readiness
 
 ## Method
 
-The notebook `notebooks/16_project3_angular_momentum_diagnostics.ipynb` loads the distance-recovered candidate table and detects the required astrometric, radial-velocity, metallicity, and distance columns.
+The notebook `notebooks/16_project_ii_angular_momentum_diagnostics.ipynb` loads the distance-recovered candidate table and detects the required astrometric, radial-velocity, metallicity, and distance columns.
 
 Because the milestone-4 table preserves some upstream placeholder columns that are entirely empty, the column-detection logic prefers non-null recovered columns over empty original columns. This prevents selecting columns such as empty `ra`, `dec`, `pmra`, or `radial_velocity` fields when recovered equivalents are available.
 
@@ -67,17 +68,17 @@ The derived magnitudes are:
 
 Candidate-level output:
 
-- `data/processed/project3_angular_momentum_candidates.csv`
+- `data/processed/project_ii_angular_momentum_candidates.csv`
 
 Summary output:
 
-- `data/processed/project3_angular_momentum_summary.csv`
+- `data/processed/project_ii_angular_momentum_summary.csv`
 
 Figures:
 
-- `figures/project3_angular_momentum_lz_lperp.png`
-- `figures/project3_angular_momentum_lz_ltot.png`
-- `figures/project3_angular_momentum_feh_lz.png`
+- `figures/project_ii_angular_momentum_lz_lperp.png`
+- `figures/project_ii_angular_momentum_lz_ltot.png`
+- `figures/project_ii_angular_momentum_feh_lz.png`
 
 ## Result summary
 

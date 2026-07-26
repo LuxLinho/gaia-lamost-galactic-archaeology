@@ -125,9 +125,9 @@ Write a concise research-style report summarizing the data, methods, figures, li
 
 **Status:** Planned
 
-## Project 1 Completion Status
+## Project I Completion Status
 
-Project 1 has been completed and polished for presentation.
+Project I has been completed and polished for presentation.
 
 Completed stages:
 
@@ -141,7 +141,7 @@ Completed stages:
 - Final Packaging: repository-level organization and final report draft
 - Final Polish: README, documentation, and presentation refinement
 
-Project 1 deliverables:
+Project I deliverables:
 
 - reproducible Jupyter notebook workflow
 - processed Gaia–LAMOST data products
@@ -150,6 +150,6 @@ Project 1 deliverables:
 - final report draft
 - documented limitations and future research directions
 
-Project 1 is now considered complete as a standalone research portfolio project.
+Project I is now considered complete as a standalone research portfolio project.
 
-The next major stage will be Project 2, focusing on machine-learning assisted stellar population clustering and stronger statistical interpretation.
+The next major stage will be Project V, focusing on machine-learning assisted stellar population clustering and stronger statistical interpretation.

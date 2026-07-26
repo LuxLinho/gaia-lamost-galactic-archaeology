@@ -184,7 +184,7 @@ The current research program is scientifically structured but still has importan
 5. Chemical information is currently limited to [Fe/H].
 6. Alpha, Mg, Ca, Si, and other abundance dimensions are not yet integrated.
 7. Some notebooks are currently result-review notebooks and should later be upgraded into fuller executable research notebooks.
-8. Repository terminology still needs a final consistency polish to remove old milestone and Project 1/2/3 wording.
+8. Repository terminology still needs a final consistency polish to remove old milestone and Project I/2/3 wording.
 
 ---
 

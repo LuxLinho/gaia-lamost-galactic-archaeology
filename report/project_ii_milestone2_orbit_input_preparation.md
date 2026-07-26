@@ -1,19 +1,20 @@
-# Project 3 Milestone 2: Orbit Input Preparation
+# Project II — Orbital Dynamics
+## Milestone 2: Orbit Input Preparation
 
 ## Goal
 
 This milestone prepares the candidate-level input table required for downstream orbital characterization.
 It does not perform orbit integration yet. Instead, it verifies whether the candidate sample contains the astrometric, radial-velocity, and Galactocentric velocity fields needed for later orbit analysis.
 
-Project 3 Milestone 1 was a planning/setup milestone. Therefore, this milestone uses the Project 2 cross-method candidate summary as the main candidate-level data input.
+Project II Milestone 1 was a planning/setup milestone. Therefore, this milestone uses the Project V cross-method candidate summary as the main candidate-level data input.
 
 ## Input table
 
-- Project 2 cross-method candidate summary: `project2_candidate_cross_method_summary.csv`
+- Project V cross-method candidate summary: `project_v_candidate_cross_method_summary.csv`
 
 ## Output table
 
-- `project3_orbit_input_candidates.csv`
+- `project_ii_orbit_input_candidates.csv`
 
 ## Orbit-readiness summary
 
@@ -44,4 +45,4 @@ If some candidates are not orbit-input ready, they remain useful for photometric
 
 ## Next step
 
-Project 3 Milestone 3 will use this prepared table to compute orbital diagnostics, such as angular-momentum-related quantities, orbital energy proxies, or full orbit integrations depending on package availability and data quality.
+Project II Milestone 3 will use this prepared table to compute orbital diagnostics, such as angular-momentum-related quantities, orbital energy proxies, or full orbit integrations depending on package availability and data quality.

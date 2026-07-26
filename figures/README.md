@@ -33,35 +33,35 @@ Generated figures should be linked or discussed in milestone notes, development 
 Large or temporary figures should be avoided unless they are directly relevant to the project documentation.
 
 
-## Project 2 Figures
+## Project V Figures
 
-Project 2 adds machine-learning diagnostic figures, including:
+Project V adds machine-learning diagnostic figures, including:
 
 ```text
-project2_pca_combined_chemo_kinematic_by_feh.png
-project2_pca_combined_chemo_kinematic_by_vtot.png
-project2_pca_combined_chemo_kinematic_candidates.png
-project2_umap_combined_chemo_kinematic_by_feh.png
-project2_umap_combined_chemo_kinematic_by_vtot.png
-project2_umap_combined_chemo_kinematic_candidates.png
-project2_pca_dbscan_candidate_overlay.png
-project2_umap_dbscan_candidate_overlay.png
-project2_umap_dbscan_clusters.png
-project2_candidate_cross_method_evidence_summary.png
+project_v_pca_combined_chemo_kinematic_by_feh.png
+project_v_pca_combined_chemo_kinematic_by_vtot.png
+project_v_pca_combined_chemo_kinematic_candidates.png
+project_v_umap_combined_chemo_kinematic_by_feh.png
+project_v_umap_combined_chemo_kinematic_by_vtot.png
+project_v_umap_combined_chemo_kinematic_candidates.png
+project_v_pca_dbscan_candidate_overlay.png
+project_v_umap_dbscan_candidate_overlay.png
+project_v_umap_dbscan_clusters.png
+project_v_candidate_cross_method_evidence_summary.png
 ```
 
 These figures should be interpreted as diagnostic visualizations for candidate prioritization. PCA and UMAP show how candidate stars appear in different embedding spaces, while DBSCAN overlays and cross-method evidence plots summarize whether candidates remain interesting across multiple unsupervised views.
 
-The figures are not standalone discovery evidence. They are supporting diagnostics for the Project 2 scientific interpretation and final packaging report.
+The figures are not standalone discovery evidence. They are supporting diagnostics for the Project V scientific interpretation and final packaging report.
 
-- `project3_orbital_diagnostics_velocity_summary.png` — Project 3 velocity-space diagnostic plot comparing tangential velocity and Galactocentric total velocity.
-- `project3_orbital_diagnostics_feh_velocity.png` — Project 3 metallicity versus Galactocentric total velocity diagnostic plot.
-- `project3_orbital_diagnostics_readiness_summary.png` — Project 3 orbital-readiness summary showing available velocity inputs and missing angular-momentum position inputs.
+- `project_ii_orbital_diagnostics_velocity_summary.png` — Project II velocity-space diagnostic plot comparing tangential velocity and Galactocentric total velocity.
+- `project_ii_orbital_diagnostics_feh_velocity.png` — Project II metallicity versus Galactocentric total velocity diagnostic plot.
+- `project_ii_orbital_diagnostics_readiness_summary.png` — Project II orbital-readiness summary showing available velocity inputs and missing angular-momentum position inputs.
 
 
-- `project3_angular_momentum_lz_lperp.png` — Project 3 angular-momentum diagnostic comparing Lz and Lperp.
-- `project3_angular_momentum_lz_ltot.png` — Project 3 angular-momentum diagnostic comparing Lz and Ltot.
-- `project3_angular_momentum_feh_lz.png` — Project 3 metallicity versus Lz diagnostic plot.
+- `project_ii_angular_momentum_lz_lperp.png` — Project II angular-momentum diagnostic comparing Lz and Lperp.
+- `project_ii_angular_momentum_lz_ltot.png` — Project II angular-momentum diagnostic comparing Lz and Ltot.
+- `project_ii_angular_momentum_feh_lz.png` — Project II metallicity versus Lz diagnostic plot.
 
 - `project_ii_galpy_orbit_eccentricity.png` — Project II baseline galpy orbit-integration eccentricity distribution for the candidate sample.
 - `project_ii_galpy_orbit_zmax.png` — Project II baseline galpy orbit-integration Zmax distribution for the candidate sample.

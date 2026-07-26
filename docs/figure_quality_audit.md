@@ -15,23 +15,21 @@ No files were flagged as blank by the current image-size and pixel-variation aud
 The figure set is technically valid, but it contains mixed generations of outputs:
 
 1. Early Project I / Project V exploratory figures
-2. Legacy Project 2 and Project 3 diagnostic figures
+2. Earlier Project V and Project II diagnostic figures
 3. New Project II orbit-integration figures
 4. New Project III population-analysis figures
 5. New Project IV metallicity-readiness figures
 
 ## Known Issues
 
-Some older figures still use legacy naming such as:
-
-- `project2_*`
-- `project3_*`
-
-Some older figures may be scientifically valid but low-information or visually inconsistent with the newer research-program structure.
+Earlier Project V and Project II figures have now been renamed to the current
+Roman-numeral project-prefix convention. Some older figures may still be
+scientifically valid but low-information or visually inconsistent with the newer
+research-program structure.
 
 Example category:
 
-- `project3_orbital_diagnostics_feh_velocity.png` — technically valid but low-information / legacy diagnostic figure.
+- `project_ii_orbital_diagnostics_feh_velocity.png` — technically valid but low-information / legacy diagnostic figure.
 
 ## Future Polish Plan
 
@@ -39,7 +37,7 @@ A later repository-wide polish pass should:
 
 1. Review all figures manually.
 2. Mark each figure as publication-ready, useful diagnostic, low-information, or legacy/obsolete.
-3. Rename or regenerate figures using Project I / II / III / IV / V / VI naming.
+3. Regenerate figures where useful using the current Project I / II / III / IV / V / VI title style.
 4. Replace low-information figures where useful.
 5. Move obsolete figures to an archive directory if they are no longer referenced.
 6. Update `figures/README.md` after the review.

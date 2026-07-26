@@ -1,4 +1,5 @@
-# Project 1 Final Report Draft
+# Project I — Data Foundation
+## Final Report Draft
 
 ## Gaia–LAMOST Galactic Archaeology Project
 
@@ -16,7 +17,7 @@ Galactic archaeology aims to reconstruct the formation history of the Milky Way 
 
 Gaia DR3 provides high-precision astrometry and photometry for a large number of Milky Way stars. LAMOST DR9 complements Gaia by providing large-scale spectroscopic information, including stellar atmospheric parameters and radial velocities. Combining Gaia and LAMOST therefore enables a chemo-kinematic view of stellar populations.
 
-This Project 1 focuses on building a working pipeline rather than claiming a final astrophysical discovery. The central question is:
+This Project I focuses on building a working pipeline rather than claiming a final astrophysical discovery. The central question is:
 
 **Can a lightweight Gaia–LAMOST workflow recover interpretable chemo-kinematic structure in a local stellar sample and produce candidate groups suitable for later large-scale validation?**
 
@@ -87,11 +88,11 @@ The Gaia–LAMOST cross-match produced a compact sample with both astrometric an
 
 ### 4.3 Chemo-kinematic feature table
 
-The derived feature table combines Gaia astrometry and photometry with LAMOST spectroscopic fields. This table is the central output of Project 1 because it enables downstream stellar population analysis.
+The derived feature table combines Gaia astrometry and photometry with LAMOST spectroscopic fields. This table is the central output of Project I because it enables downstream stellar population analysis.
 
 ### 4.4 Candidate population exploration
 
-The candidate-selection stage identifies stars that may be chemically or kinematically distinct from the main local sample. These candidates are not presented as confirmed substructures. Instead, they are treated as useful targets for larger-sample validation in Project 2.
+The candidate-selection stage identifies stars that may be chemically or kinematically distinct from the main local sample. These candidates are not presented as confirmed substructures. Instead, they are treated as useful targets for larger-sample validation in Project V.
 
 ### 4.5 Scientific figures
 
@@ -120,7 +121,7 @@ The current candidate groups should be interpreted cautiously. A small local sam
 5. evaluate robustness,
 6. write a scientific interpretation.
 
-This makes Project 1 a strong foundation for scaling up to larger Gaia–LAMOST samples.
+This makes Project I a strong foundation for scaling up to larger Gaia–LAMOST samples.
 
 ## 6. Limitations
 
@@ -130,7 +131,7 @@ Several limitations remain:
    The current sample is intentionally compact and is not large enough for population-level conclusions.
 
 2. **Selection effects**  
-   Gaia and LAMOST have different selection functions. These are not fully modelled in Project 1.
+   Gaia and LAMOST have different selection functions. These are not fully modelled in Project I.
 
 3. **Distance assumptions**  
    Simplified distance estimates may introduce uncertainty, especially for stars with less precise parallaxes.
@@ -146,13 +147,13 @@ Several limitations remain:
 
 ## 7. Conclusion
 
-Project 1 successfully builds a reproducible Gaia–LAMOST workflow for exploratory Galactic archaeology. It combines Gaia DR3 astrometric and photometric data with LAMOST DR9 spectroscopic information, constructs chemo-kinematic features, generates diagnostic figures, and produces a first scientific interpretation.
+Project I successfully builds a reproducible Gaia–LAMOST workflow for exploratory Galactic archaeology. It combines Gaia DR3 astrometric and photometric data with LAMOST DR9 spectroscopic information, constructs chemo-kinematic features, generates diagnostic figures, and produces a first scientific interpretation.
 
 The project is best understood as a methodological foundation. Its value lies in demonstrating that the author can design, implement, validate, and interpret a scientific data-analysis pipeline. The next stage should scale this workflow to a larger sample and introduce more rigorous population modelling.
 
 ## 8. Future Work
 
-Project 2 should focus on scaling the current workflow. Recommended next steps include:
+Project V should focus on scaling the current workflow. Recommended next steps include:
 
 1. Querying a substantially larger Gaia–LAMOST sample.
 2. Improving astrometric and spectroscopic quality cuts.

@@ -10,7 +10,7 @@ The notebooks document the main scientific workflow, including data querying, ca
 
 The notebooks are organized by project stage and milestone.
 
-### Project 1: Gaia–LAMOST chemo-kinematic pipeline
+### Project I — Data Foundation
 
 ```text
 01_gaia_dr3_query.ipynb
@@ -21,20 +21,35 @@ The notebooks are organized by project stage and milestone.
 06_candidate_level_diagnostics.ipynb
 ```
 
-Project 1 builds the core Gaia–LAMOST workflow: Gaia DR3 query, LAMOST exploration, cross-matching, feature construction, larger-sample preparation, and candidate-level physical diagnostics.
+Project I builds the core Gaia–LAMOST workflow: Gaia DR3 query, LAMOST exploration, cross-matching, feature construction, larger-sample preparation, and candidate-level physical diagnostics.
 
-### Project 2: Machine-learning assisted candidate prioritization
+### Project V — Computational Discovery
 
 ```text
-07_project2_feature_space_design.ipynb
-08_project2_pca_baseline_embedding.ipynb
-09_project2_umap_embedding.ipynb
-10_project2_dbscan_baseline_clustering.ipynb
-11_project2_dbscan_robustness_analysis.ipynb
-12_project2_candidate_cross_method_summary.ipynb
+07_project_v_feature_space_design.ipynb
+08_project_v_pca_baseline_embedding.ipynb
+09_project_v_umap_embedding.ipynb
+10_project_v_dbscan_baseline_clustering.ipynb
+11_project_v_dbscan_robustness_analysis.ipynb
+12_project_v_candidate_cross_method_summary.ipynb
 ```
 
-Project 2 extends the pipeline with feature-space design, PCA, UMAP, DBSCAN, robustness checks, and cross-method candidate evidence summaries.
+Project V extends the pipeline with feature-space design, PCA, UMAP, DBSCAN, robustness checks, and cross-method candidate evidence summaries.
+
+### Project II — Orbital Dynamics
+
+```text
+13_project_ii_orbit_input_preparation.ipynb
+14_project_ii_orbital_diagnostics_preparation.ipynb
+15_project_ii_distance_parallax_recovery.ipynb
+16_project_ii_angular_momentum_diagnostics.ipynb
+17_project_ii_orbital_family_interpretation.ipynb
+18_project_ii_galpy_orbit_integration_preparation.ipynb
+19_project_ii_galpy_baseline_orbit_integration.ipynb
+20_project_ii_orbit_angular_momentum_consistency.ipynb
+```
+
+Project II prepares orbit inputs, recovers distance/parallax information, computes angular-momentum diagnostics, assigns orbital-family interpretation labels, and compares those labels with baseline `galpy` orbit integrations.
 
 ## Notes
 
@@ -52,12 +67,12 @@ Each notebook should include:
 - saved outputs when relevant
 - links to related milestone notes, reports, or figures
 
-- `14_project_ii_orbital_diagnostics_preparation.ipynb` — Prepares Project 3 readiness-aware orbital diagnostics, preserving velocity-space diagnostics and documenting missing distance/parallax input required for angular-momentum analysis.
+- `14_project_ii_orbital_diagnostics_preparation.ipynb` — Prepares Project II readiness-aware orbital diagnostics, preserving velocity-space diagnostics and documenting missing distance/parallax input required for angular-momentum analysis.
 
 
-- `15_project_ii_distance_parallax_recovery.ipynb` — Recovers Gaia parallax/distance information for Project 3 candidates and prepares distance-ready inputs for angular-momentum analysis.
+- `15_project_ii_distance_parallax_recovery.ipynb` — Recovers Gaia parallax/distance information for Project II candidates and prepares distance-ready inputs for angular-momentum analysis.
 
-- `16_project_ii_angular_momentum_diagnostics.ipynb` — Computes Project 3 Galactocentric angular-momentum diagnostics from distance-recovered candidates, including Lz, Lperp, and Ltot.
+- `16_project_ii_angular_momentum_diagnostics.ipynb` — Computes Project II Galactocentric angular-momentum diagnostics from distance-recovered candidates, including Lz, Lperp, and Ltot.
 
 - `19_project_ii_galpy_baseline_orbit_integration.ipynb` — Runs the first Project II baseline orbit integration with `galpy` and `MWPotential2014`, producing eccentricity, pericenter, apocenter, Zmax, and orbit-level diagnostic outputs.
 

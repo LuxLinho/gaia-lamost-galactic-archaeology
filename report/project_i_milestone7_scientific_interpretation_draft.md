@@ -1,4 +1,4 @@
-# Project 1 Milestone 7: Scientific Interpretation Draft
+# Project I Milestone 7: Scientific Interpretation Draft
 
 ## 1. Purpose of this milestone
 
@@ -6,7 +6,7 @@ This milestone converts the technical outputs from the Gaia–LAMOST exploratory
 
 The goal is not to claim a definitive discovery, but to summarize what the current chemo-kinematic sample suggests, identify which results are robust enough to discuss, and clarify which parts remain candidate-level evidence that require larger samples or additional validation.
 
-This document is intended to serve as the first draft of the Results and Discussion sections for Project 1.
+This document is intended to serve as the first draft of the Results and Discussion sections for Project I.
 
 ---
 
@@ -24,7 +24,7 @@ In this project, the main scientific question is:
 
 ## 3. Summary of completed technical pipeline
 
-The current Project 1 pipeline has completed the following steps:
+The current Project I pipeline has completed the following steps:
 
 1. Queried and validated a Gaia DR3 nearby stellar sample.
 2. Connected the Gaia sample to LAMOST spectroscopic information.
@@ -100,7 +100,7 @@ The strongest candidates are those that satisfy multiple conditions at once:
 5. High velocity or unusual motion compared with the local disk.
 6. Physically plausible CMD position.
 
-The most important scientific result from Project 1 is therefore not the exact number of candidates, but the demonstration that the pipeline can isolate stars that are worth follow-up analysis.
+The most important scientific result from Project I is therefore not the exact number of candidates, but the demonstration that the pipeline can isolate stars that are worth follow-up analysis.
 
 A careful wording for the result is:
 
@@ -120,13 +120,13 @@ Therefore, machine-learning clusters should not be described as confirmed Galact
 
 **The clustering analysis suggests that chemo-kinematic feature space contains non-random structure, but the astrophysical meaning of each cluster requires validation against metallicity, velocity, CMD position, and known Galactic-population expectations.**
 
-The most useful role of machine learning in Project 1 is candidate prioritization and visualization, not final classification.
+The most useful role of machine learning in Project I is candidate prioritization and visualization, not final classification.
 
 ---
 
 ## 9. Main scientific takeaways
 
-The current Project 1 results support four preliminary conclusions.
+The current Project I results support four preliminary conclusions.
 
 ### 9.1 The Gaia–LAMOST cross-match is scientifically usable
 
@@ -142,7 +142,7 @@ Combining metallicity and velocity information is more powerful than using eithe
 
 ### 9.4 The current candidates require cautious interpretation
 
-The candidate stars are not confirmed merger debris or halo members. They are candidate objects that demonstrate the potential of the pipeline and motivate a larger-scale Project 2 analysis.
+The candidate stars are not confirmed merger debris or halo members. They are candidate objects that demonstrate the potential of the pipeline and motivate a larger-scale Project V analysis.
 
 ---
 
@@ -152,7 +152,7 @@ The current interpretation has several important limitations.
 
 ### 10.1 Sample size
 
-Project 1 is intentionally exploratory. The current sample is too small to support strong statistical claims about the Milky Way as a whole.
+Project I is intentionally exploratory. The current sample is too small to support strong statistical claims about the Milky Way as a whole.
 
 ### 10.2 Selection effects
 
@@ -174,7 +174,7 @@ Without full orbital integration in a Galactic potential, the current project ca
 
 ## 11. Conservative conclusion
 
-Project 1 successfully builds an end-to-end exploratory Gaia–LAMOST chemo-kinematic pipeline.
+Project I successfully builds an end-to-end exploratory Gaia–LAMOST chemo-kinematic pipeline.
 
 The main scientific value of the project is that it demonstrates how Gaia astrometry and LAMOST spectroscopy can be combined to identify candidate stellar populations in the Milky Way. The current results suggest that the sample is dominated by disk-like stars, while a smaller number of objects show chemo-kinematic properties that make them interesting candidates for further inspection.
 
@@ -184,11 +184,11 @@ The strongest interpretation is therefore:
 
 ---
 
-## 12. Transition to Project 2
+## 12. Transition to Project V
 
-Project 1 establishes the foundation.
+Project I establishes the foundation.
 
-Project 2 should focus on scaling the analysis to a larger Gaia–LAMOST sample, improving quality cuts, adding more robust velocity and orbital features, and testing whether the candidate-selection logic remains stable when applied to a broader dataset.
+Project V should focus on scaling the analysis to a larger Gaia–LAMOST sample, improving quality cuts, adding more robust velocity and orbital features, and testing whether the candidate-selection logic remains stable when applied to a broader dataset.
 
 The natural next steps are:
 

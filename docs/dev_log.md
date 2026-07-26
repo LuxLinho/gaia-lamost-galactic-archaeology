@@ -751,72 +751,72 @@ Milestone 6 converts the chemo-kinematic candidate list from Milestone 5 into a 
 ### Notes
 
 The candidate levels introduced in this milestone are diagnostic prioritization labels rather than final astrophysical classifications. They are based on simple chemo-kinematic criteria, mainly metallicity, tangential velocity, and Galactocentric total velocity. These labels help identify stars that may be worth closer inspection in later interpretation, visualization, and comparison with known Galactic components such as the disk, stellar halo, and possible accreted structures.
-## Project 1 Milestone 7: Scientific Interpretation Draft
+## Project I Milestone 7: Scientific Interpretation Draft
 
-- Added a first scientific interpretation draft for the Project 1 Gaia–LAMOST exploratory analysis.
+- Added a first scientific interpretation draft for the Project I Gaia–LAMOST exploratory analysis.
 - Interpreted the CMD, metallicity structure, velocity-space behavior, candidate stars, and clustering outputs in conservative scientific language.
 - Clarified that current candidate stars should be treated as preliminary chemo-kinematic candidates rather than confirmed accreted-halo or merger-debris members.
 - Documented key limitations, including sample size, survey-selection effects, measurement uncertainties, cross-match reliability, and the absence of full orbital analysis.
-- Added a transition section explaining how Project 1 motivates a larger and more robust Project 2 analysis.
+- Added a transition section explaining how Project I motivates a larger and more robust Project V analysis.
 
 
-## Project 1 Final Packaging - README and Final Report Draft
+## Project I Final Packaging - README and Final Report Draft
 
-Project 1 has entered the final packaging stage.
+Project I has entered the final packaging stage.
 
 Completed in this stage:
 - Rewrote the repository README into a public-facing project showcase version.
-- Added a Project 1 final report draft under `report/`.
+- Added a Project I final report draft under `report/`.
 - Clarified the project scope as a proof-of-concept Gaia–LAMOST Galactic archaeology pipeline.
 - Summarized the completed milestones from Gaia DR3 querying to scientific interpretation.
 - Added limitations and future-work sections to avoid overstating discovery claims.
 
 Scientific positioning:
-- The current Project 1 output is not presented as a definitive stellar-population discovery.
+- The current Project I output is not presented as a definitive stellar-population discovery.
 - The main value is a reproducible, interpretable pipeline combining Gaia astrometry/photometry and LAMOST spectroscopy.
-- The project is now suitable for GitHub presentation, RA outreach, and later expansion into Project 2.
+- The project is now suitable for GitHub presentation, RA outreach, and later expansion into Project V.
 
 
-## Project 1 Final Polish
+## Project I Final Polish
 
-Project 1 final polish was completed after the final packaging stage.
+Project I final polish was completed after the final packaging stage.
 
-This stage focused on improving the repository-level presentation rather than changing the scientific analysis or restructuring the directory layout. The main README was updated to clearly describe the research motivation, Gaia–LAMOST data combination, Project 1 workflow, main outputs, scientific interpretation, current limitations, and planned next stages.
+This stage focused on improving the repository-level presentation rather than changing the scientific analysis or restructuring the directory layout. The main README was updated to clearly describe the research motivation, Gaia–LAMOST data combination, Project I workflow, main outputs, scientific interpretation, current limitations, and planned next stages.
 
-The repository remains intentionally flat at this stage. A future restructuring into separate project folders will be considered only after Project 2 and Project 3 are developed.
+The repository remains intentionally flat at this stage. A future restructuring into separate project folders will be considered only after Project V and Project II are developed.
 
 Final polish scope:
 
 - refined the top-level README for external readers
-- clarified that Project 1 is complete
+- clarified that Project I is complete
 - emphasized the exploratory nature of the current candidate selection
 - documented current limitations and future directions
 - kept notebooks, figures, data products, and directory layout unchanged
 
-Project 1 is now in a presentable portfolio state for research outreach, RA applications, and later multi-project expansion.
+Project I is now in a presentable portfolio state for research outreach, RA applications, and later multi-project expansion.
 
-## Project 2 Milestone 1: Research Design and Feature-Space Definition
+## Project V Milestone 1: Research Design and Feature-Space Definition
 
-Project 2 was started after Project 1 final packaging and final polish were completed.
+Project V was started after Project I final packaging and final polish were completed.
 
-The goal of Project 2 is to move from candidate-level exploratory diagnostics toward machine-learning assisted stellar population clustering. The primary input table selected for Project 2 is:
+The goal of Project V is to move from candidate-level exploratory diagnostics toward machine-learning assisted stellar population clustering. The primary input table selected for Project V is:
 
 - `data/processed/gaia_lamost_larger_velocity_features.csv`
 
 This table contains the larger Gaia–LAMOST feature set with astrometric, photometric, spectroscopic, Galactic coordinate, and Galactocentric velocity quantities.
 
-Project 2 research question:
+Project V research question:
 
 Can unsupervised machine learning recover interpretable stellar population structure from Gaia–LAMOST chemo-kinematic features?
 
-Initial Project 2 design:
+Initial Project V design:
 
 - use the larger Gaia–LAMOST velocity-feature table as the baseline dataset
 - define multiple feature spaces for clustering experiments
 - separate physical diagnostic flags from machine-learning input features
 - compare clustering behaviour across photometric, chemical, kinematic, and combined feature spaces
 - avoid treating exploratory clusters as confirmed astrophysical substructures
-- use candidate flags from Project 1 as post-hoc interpretation labels rather than training labels
+- use candidate flags from Project I as post-hoc interpretation labels rather than training labels
 
 Planned feature-space groups:
 
@@ -862,13 +862,14 @@ Initial methods to evaluate:
 - DBSCAN or HDBSCAN for density-based clustering
 - Gaussian Mixture Models as a comparison method
 
-Milestone 1 is limited to research design and feature-space definition. Full clustering experiments will be developed in later Project 2 milestones.
+Milestone 1 is limited to research design and feature-space definition. Full clustering experiments will be developed in later Project V milestones.
 
-## Project 2 Milestone 2: PCA Baseline Embedding and Diagnostic Visualization
+## Project V — Computational Discovery
+## Milestone 2: PCA Baseline Embedding and Diagnostic Visualization
 
-Project 2 Milestone 2 introduced a transparent PCA baseline for the larger Gaia–LAMOST feature table.
+Project V Milestone 2 introduced a transparent PCA baseline for the larger Gaia–LAMOST feature table.
 
-The goal of this milestone was to evaluate whether simple linear dimensionality reduction reveals interpretable structure in the Project 2 feature spaces before applying nonlinear embedding or clustering methods.
+The goal of this milestone was to evaluate whether simple linear dimensionality reduction reveals interpretable structure in the Project V feature spaces before applying nonlinear embedding or clustering methods.
 
 Primary input table:
 
@@ -884,22 +885,23 @@ Feature spaces evaluated:
 
 Generated outputs:
 
-- `notebooks/08_project2_pca_baseline_embedding.ipynb`
-- `data/processed/project2_pca_explained_variance_summary.csv`
-- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
-- `figures/project2_pca_combined_chemo_kinematic_by_feh.png`
-- `figures/project2_pca_combined_chemo_kinematic_by_vtot.png`
-- `figures/project2_pca_combined_chemo_kinematic_candidates.png`
+- `notebooks/08_project_v_pca_baseline_embedding.ipynb`
+- `data/processed/project_v_pca_explained_variance_summary.csv`
+- `data/processed/project_v_combined_chemo_kinematic_pca_embedding.csv`
+- `figures/project_v_pca_combined_chemo_kinematic_by_feh.png`
+- `figures/project_v_pca_combined_chemo_kinematic_by_vtot.png`
+- `figures/project_v_pca_combined_chemo_kinematic_candidates.png`
 
 Scientific interpretation principle:
 
-PCA is used as a baseline embedding and diagnostic tool. Project 1 candidate flags are used only for post-hoc interpretation and are not used as training labels. Any separation in PCA space should be interpreted as feature-space structure rather than confirmed astrophysical substructure.
+PCA is used as a baseline embedding and diagnostic tool. Project I candidate flags are used only for post-hoc interpretation and are not used as training labels. Any separation in PCA space should be interpreted as feature-space structure rather than confirmed astrophysical substructure.
 
-## Project 2 Milestone 3: UMAP Nonlinear Embedding and Candidate Structure Exploration
+## Project V — Computational Discovery
+## Milestone 3: UMAP Nonlinear Embedding and Candidate Structure Exploration
 
-Project 2 Milestone 3 applied UMAP to the combined Gaia–LAMOST chemo-kinematic feature space.
+Project V Milestone 3 applied UMAP to the combined Gaia–LAMOST chemo-kinematic feature space.
 
-This milestone was motivated by the Project 2 PCA baseline, where many Project 1 chemo-kinematic candidates appeared outside the dense main stellar locus. UMAP was used to test whether nonlinear embedding reveals clearer local structure among candidate stars and the main stellar population.
+This milestone was motivated by the Project V PCA baseline, where many Project I chemo-kinematic candidates appeared outside the dense main stellar locus. UMAP was used to test whether nonlinear embedding reveals clearer local structure among candidate stars and the main stellar population.
 
 Primary input table:
 
@@ -919,50 +921,50 @@ Feature space used:
 
 Generated outputs:
 
-- `notebooks/09_project2_umap_embedding.ipynb`
-- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
-- `figures/project2_umap_combined_chemo_kinematic_by_feh.png`
-- `figures/project2_umap_combined_chemo_kinematic_by_vtot.png`
-- `figures/project2_umap_combined_chemo_kinematic_candidates.png`
+- `notebooks/09_project_v_umap_embedding.ipynb`
+- `data/processed/project_v_combined_chemo_kinematic_umap_embedding.csv`
+- `figures/project_v_umap_combined_chemo_kinematic_by_feh.png`
+- `figures/project_v_umap_combined_chemo_kinematic_by_vtot.png`
+- `figures/project_v_umap_combined_chemo_kinematic_candidates.png`
 
 Scientific interpretation principle:
 
-UMAP is used as an exploratory nonlinear embedding method. Candidate flags from Project 1 are used only for post-hoc interpretation. Visual grouping in UMAP space should not be interpreted as confirmed Galactic substructure without further clustering and astrophysical validation.
+UMAP is used as an exploratory nonlinear embedding method. Candidate flags from Project I are used only for post-hoc interpretation. Visual grouping in UMAP space should not be interpreted as confirmed Galactic substructure without further clustering and astrophysical validation.
 
-## Project 2 Milestone 4: DBSCAN Baseline Clustering
+## Project V Milestone 4: DBSCAN Baseline Clustering
 
-Project 2 Milestone 4 introduced DBSCAN as a baseline density-based clustering method on the PCA and UMAP embeddings generated in Milestones 2 and 3.
+Project V Milestone 4 introduced DBSCAN as a baseline density-based clustering method on the PCA and UMAP embeddings generated in Milestones 2 and 3.
 
 The goal of this milestone is to test whether candidate-rich regions seen in PCA and UMAP diagnostic plots can be identified by an unsupervised clustering method.
 
 Primary inputs:
 
-- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
-- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
+- `data/processed/project_v_combined_chemo_kinematic_pca_embedding.csv`
+- `data/processed/project_v_combined_chemo_kinematic_umap_embedding.csv`
 
 Generated outputs:
 
-- `notebooks/10_project2_dbscan_baseline_clustering.ipynb`
-- `data/processed/project2_dbscan_parameter_grid_summary.csv`
-- `data/processed/project2_pca_dbscan_labels_baseline.csv`
-- `data/processed/project2_umap_dbscan_labels_baseline.csv`
-- `data/processed/project2_dbscan_cluster_summary_baseline.csv`
-- `figures/project2_umap_dbscan_clusters.png`
-- `figures/project2_umap_dbscan_candidate_overlay.png`
-- `figures/project2_pca_dbscan_candidate_overlay.png`
+- `notebooks/10_project_v_dbscan_baseline_clustering.ipynb`
+- `data/processed/project_v_dbscan_parameter_grid_summary.csv`
+- `data/processed/project_v_pca_dbscan_labels_baseline.csv`
+- `data/processed/project_v_umap_dbscan_labels_baseline.csv`
+- `data/processed/project_v_dbscan_cluster_summary_baseline.csv`
+- `figures/project_v_umap_dbscan_clusters.png`
+- `figures/project_v_umap_dbscan_candidate_overlay.png`
+- `figures/project_v_pca_dbscan_candidate_overlay.png`
 
 Scientific interpretation principle:
 
 DBSCAN labels are treated as exploratory feature-space groupings. Candidate enrichment in a DBSCAN cluster is useful as a diagnostic, but it does not by itself confirm a distinct astrophysical population.
 
-## Project 2 Milestone 5: DBSCAN Small-Grid Robustness Check
+## Project V Milestone 5: DBSCAN Small-Grid Robustness Check
 
-Project 2 Milestone 5 tested whether the candidate-enriched DBSCAN outlier behavior observed in Milestone 4 remains stable under small changes to DBSCAN parameters.
+Project V Milestone 5 tested whether the candidate-enriched DBSCAN outlier behavior observed in Milestone 4 remains stable under small changes to DBSCAN parameters.
 
-The analysis used the PCA and UMAP embedding tables generated in earlier Project 2 milestones:
+The analysis used the PCA and UMAP embedding tables generated in earlier Project V milestones:
 
-- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
-- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
+- `data/processed/project_v_combined_chemo_kinematic_pca_embedding.csv`
+- `data/processed/project_v_combined_chemo_kinematic_umap_embedding.csv`
 
 A small DBSCAN parameter grid was evaluated:
 
@@ -973,36 +975,36 @@ For each parameter setting, the DBSCAN noise/outlier population was summarized b
 
 - number of noise points
 - noise fraction
-- number of Project 1 chemo-kinematic candidates in the noise population
+- number of Project I chemo-kinematic candidates in the noise population
 - candidate fraction within the noise population
 - mean metallicity
 - mean Galactocentric total velocity
 
 Generated outputs:
 
-- `notebooks/11_project2_dbscan_robustness_analysis.ipynb`
-- `data/processed/project2_dbscan_small_parameter_sweep_summary.csv`
+- `notebooks/11_project_v_dbscan_robustness_analysis.ipynb`
+- `data/processed/project_v_dbscan_small_parameter_sweep_summary.csv`
 
 Main interpretation:
 
-The PCA small-grid sweep shows a stable candidate-rich outlier population. Across the tested PCA DBSCAN settings, 24–25 of the 27 Project 1 candidates are repeatedly assigned to the noise/outlier population.
+The PCA small-grid sweep shows a stable candidate-rich outlier population. Across the tested PCA DBSCAN settings, 24–25 of the 27 Project I candidates are repeatedly assigned to the noise/outlier population.
 
-The same behavior is not reproduced in the UMAP small-grid sweep. Under the same parameter choices, UMAP DBSCAN assigns almost all stars to one large cluster, leaving only 0–2 stars as noise and 0–1 Project 1 candidates in the noise population.
+The same behavior is not reproduced in the UMAP small-grid sweep. Under the same parameter choices, UMAP DBSCAN assigns almost all stars to one large cluster, leaving only 0–2 stars as noise and 0–1 Project I candidates in the noise population.
 
 This suggests that the candidate-rich outlier behavior is more visible in the PCA-projected global feature space than in the current UMAP local-neighborhood embedding. This is interpreted as feature-space evidence, not confirmation of a distinct astrophysical population.
 
 
 ## 2026-06-22
 
-### Project 2 Milestone 7: Scientific Interpretation and Final Packaging
+### Project V Milestone 7: Scientific Interpretation and Final Packaging
 
-Completed the final packaging stage for Project 2 of the Gaia–LAMOST Galactic Archaeology Project.
+Completed the final packaging stage for Project V of the Gaia–LAMOST Galactic Archaeology Project.
 
-Project 2 extends the Project 1 chemo-kinematic candidate workflow with machine-learning assisted feature-space analysis. The purpose of Project 2 is to test whether candidate stars identified by physical diagnostics remain notable under multiple unsupervised views of the Gaia–LAMOST feature space.
+Project V extends the Project I chemo-kinematic candidate workflow with machine-learning assisted feature-space analysis. The purpose of Project V is to test whether candidate stars identified by physical diagnostics remain notable under multiple unsupervised views of the Gaia–LAMOST feature space.
 
-### Completed Project 2 method chain
+### Completed Project V method chain
 
-Project 2 now consists of the following completed milestones:
+Project V now consists of the following completed milestones:
 
 ```text
 M1  Feature-space design
@@ -1016,7 +1018,7 @@ M7  Scientific interpretation and final packaging
 
 ### Final interpretation
 
-The main Project 2 interpretation is intentionally cautious.
+The main Project V interpretation is intentionally cautious.
 
 The candidate stars are not presented as confirmed members of a newly discovered Galactic substructure. Instead, they are interpreted as evidence-ranked chemo-dynamical follow-up targets.
 
@@ -1028,15 +1030,15 @@ A candidate is considered more interesting when it receives support from multipl
 - UMAP embedding position
 - DBSCAN cluster or noise behavior
 - robustness across DBSCAN parameter choices
-- previous Project 1 candidate labels
-- Project 2 cross-method evidence summary
+- previous Project I candidate labels
+- Project V cross-method evidence summary
 
 ### Files added or updated
 
 Added:
 
 ```text
-report/project2_scientific_interpretation_and_final_packaging.md
+report/project_v_scientific_interpretation_and_final_packaging.md
 ```
 
 Updated:
@@ -1051,28 +1053,28 @@ docs/dev_log.md
 
 ### Main scientific conclusion
 
-Project 2 demonstrates a reproducible machine-learning assisted candidate-prioritization workflow for Gaia–LAMOST Galactic archaeology.
+Project V demonstrates a reproducible machine-learning assisted candidate-prioritization workflow for Gaia–LAMOST Galactic archaeology.
 
 The strongest conclusion is:
 
 ```text
-The Project 2 candidates should be interpreted as evidence-ranked follow-up targets, not as confirmed members of a new stellar population.
+The Project V candidates should be interpreted as evidence-ranked follow-up targets, not as confirmed members of a new stellar population.
 ```
 
 ### Next step
 
-Project 3 should move from embedding-level and clustering-level evidence toward orbital characterization and comparison with known Milky Way substructures.
+Project II should move from embedding-level and clustering-level evidence toward orbital characterization and comparison with known Milky Way substructures.
 
-## Project 3 Milestone 1: Orbital Characterization Setup
+## Project II Milestone 1: Orbital Characterization Setup
 
-- Started Project 3 after Project 2 final packaging.
+- Started Project II after Project V final packaging.
 - Confirmed repository state before starting:
   - branch: `main`
-  - latest commit: `a180886 Add Project 2 scientific interpretation and final packaging`
+  - latest commit: `a180886 Add Project V scientific interpretation and final packaging`
   - working tree: clean
   - remote: `lior-linho/gaia-lamost-galactic-archaeology`
-- Identified Project 3 primary inputs:
-  - `data/processed/project2_candidate_cross_method_summary.csv`
+- Identified Project II primary inputs:
+  - `data/processed/project_v_candidate_cross_method_summary.csv`
   - `data/processed/gaia_lamost_candidate_summary_table.csv`
 - Defined the orbital characterization feature plan:
   - astrometric inputs
@@ -1080,63 +1082,66 @@ Project 3 should move from embedding-level and clustering-level evidence toward 
   - Galactocentric velocity features
   - orbital parameters such as eccentricity, pericenter, apocenter, Zmax, and Lz
   - quality-control requirements before full orbit integration
-- Added Project 3 Milestone 1 setup report:
-  - `report/project3_milestone1_orbital_characterization_setup.md`
+- Added Project II Milestone 1 setup report:
+  - `report/project_ii_milestone1_orbital_characterization_setup.md`
 
-## Project 3 Milestone 2 — Orbit Input Preparation
+## Project II Milestone 2 — Orbit Input Preparation
 
 Prepared the candidate-level orbit input table for downstream orbital characterization.
 
 Changes:
-- Used the Project 2 cross-method candidate summary as the main candidate-level input table.
+- Used the Project V cross-method candidate summary as the main candidate-level input table.
 - Checked availability of core orbit-input fields including `ra`, `dec`, `parallax`, `pmra`, `pmdec`, `radial_velocity`, `galcen_vx`, `galcen_vy`, and `galcen_vz`.
-- Generated `data/processed/project3_orbit_input_candidates.csv`.
-- Added an orbit-readiness summary in `report/project3_milestone2_orbit_input_preparation.md`.
+- Generated `data/processed/project_ii_orbit_input_candidates.csv`.
+- Added an orbit-readiness summary in `report/project_ii_milestone2_orbit_input_preparation.md`.
 
 This milestone does not perform orbit integration yet. It establishes a clean, auditable input table for the next orbital characterization step.
 
-## Project 3 Milestone 3 — Orbital Diagnostics / Angular Momentum Preparation
+## Project II — Orbital Dynamics
+## Milestone 3: Orbital Diagnostics / Angular Momentum Preparation
 
-- Added `notebooks/14_project3_orbital_diagnostics_preparation.ipynb`.
-- Inspected the Project 3 orbit-input candidate table and found that the 27 selected candidates have Galactocentric velocity components but no valid parallax/distance information.
-- Preserved all 27 candidate rows in `data/processed/project3_orbital_diagnostics_candidates.csv`.
+- Added `notebooks/14_project_ii_orbital_diagnostics_preparation.ipynb`.
+- Inspected the Project II orbit-input candidate table and found that the 27 selected candidates have Galactocentric velocity components but no valid parallax/distance information.
+- Preserved all 27 candidate rows in `data/processed/project_ii_orbital_diagnostics_candidates.csv`.
 - Added readiness-aware orbital diagnostic columns, including `can_compute_angular_momentum` and `missing_orbital_position_input`.
 - Added velocity-space diagnostics based on Galactocentric total velocity, tangential velocity, and metallicity.
 - Included angular-momentum columns such as `Lz_kpc_kms`, `Lperp_kpc_kms`, and `Ltot_kpc_kms` as explicit unavailable fields pending distance recovery.
 - Generated velocity-summary, metallicity-velocity, and orbital-readiness figures.
-- Added milestone report: `report/project3_milestone3_orbital_diagnostics_preparation.md`.
+- Added milestone report: `report/project_ii_milestone3_orbital_diagnostics_preparation.md`.
 
 
-## Project 3 Milestone 4 — Distance / Parallax Recovery for Angular Momentum Analysis
+## Project II — Orbital Dynamics
+## Milestone 4: Distance / Parallax Recovery for Angular Momentum Analysis
 
-- Added `notebooks/15_project3_distance_parallax_recovery.ipynb`.
+- Added `notebooks/15_project_ii_distance_parallax_recovery.ipynb`.
 - Recovered candidate parallax/distance information from existing processed Gaia–LAMOST tables where merge keys allowed.
-- Wrote `data/processed/project3_distance_recovered_candidates.csv`.
-- Wrote `data/processed/project3_distance_recovery_summary.csv`.
-- Added `report/project3_milestone4_distance_parallax_recovery.md`.
+- Wrote `data/processed/project_ii_distance_recovered_candidates.csv`.
+- Wrote `data/processed/project_ii_distance_recovery_summary.csv`.
+- Added `report/project_ii_milestone4_distance_parallax_recovery.md`.
 - Prepared the candidate table for later angular-momentum diagnostics (`Lz`, `Lperp`, `Ltot`) while documenting that inverse-parallax distances are exploratory and should be refined before publication-grade orbit analysis.
 
-## Project 3 Milestone 5 — Angular Momentum Diagnostics
+## Project II — Orbital Dynamics
+## Milestone 5: Angular Momentum Diagnostics
 
-Added angular-momentum diagnostics for Project 3 distance-recovered candidates.
+Added angular-momentum diagnostics for Project II distance-recovered candidates.
 
 Input:
-- `data/processed/project3_distance_recovered_candidates.csv`
+- `data/processed/project_ii_distance_recovered_candidates.csv`
 
 Notebook:
-- `notebooks/16_project3_angular_momentum_diagnostics.ipynb`
+- `notebooks/16_project_ii_angular_momentum_diagnostics.ipynb`
 
 Outputs:
-- `data/processed/project3_angular_momentum_candidates.csv`
-- `data/processed/project3_angular_momentum_summary.csv`
+- `data/processed/project_ii_angular_momentum_candidates.csv`
+- `data/processed/project_ii_angular_momentum_summary.csv`
 
 Figures:
-- `figures/project3_angular_momentum_lz_lperp.png`
-- `figures/project3_angular_momentum_lz_ltot.png`
-- `figures/project3_angular_momentum_feh_lz.png`
+- `figures/project_ii_angular_momentum_lz_lperp.png`
+- `figures/project_ii_angular_momentum_lz_ltot.png`
+- `figures/project_ii_angular_momentum_feh_lz.png`
 
 Report:
-- `report/project3_milestone5_angular_momentum_diagnostics.md`
+- `report/project_ii_milestone5_angular_momentum_diagnostics.md`
 
 The milestone computes Galactocentric angular-momentum components and derived diagnostics:
 - `Lz_kpc_kms`

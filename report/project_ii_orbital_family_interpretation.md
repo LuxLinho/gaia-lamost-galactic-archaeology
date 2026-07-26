@@ -16,7 +16,7 @@ This is a diagnostic interpretation, not yet a final dynamical classification. F
 
 Input file:
 
-- `data/processed/project3_angular_momentum_candidates.csv`
+- `data/processed/project_ii_angular_momentum_candidates.csv`
 
 Output files:
 

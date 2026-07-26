@@ -36,22 +36,22 @@ Current completed methods include:
 
 Relevant existing work includes:
 
-- `notebooks/07_project2_feature_space_design.ipynb`
-- `notebooks/08_project2_pca_baseline_embedding.ipynb`
-- `notebooks/09_project2_umap_embedding.ipynb`
-- `notebooks/10_project2_dbscan_baseline_clustering.ipynb`
-- `notebooks/11_project2_dbscan_robustness_analysis.ipynb`
-- `notebooks/12_project2_candidate_cross_method_summary.ipynb`
+- `notebooks/07_project_v_feature_space_design.ipynb`
+- `notebooks/08_project_v_pca_baseline_embedding.ipynb`
+- `notebooks/09_project_v_umap_embedding.ipynb`
+- `notebooks/10_project_v_dbscan_baseline_clustering.ipynb`
+- `notebooks/11_project_v_dbscan_robustness_analysis.ipynb`
+- `notebooks/12_project_v_candidate_cross_method_summary.ipynb`
 - `notebooks/25_project_v_advanced_clustering_readiness_and_feature_audit.ipynb`
 - `notebooks/26_project_v_advanced_clustering_baseline_comparison.ipynb`
 - `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`
-- `data/processed/project2_candidate_cross_method_summary.csv`
+- `data/processed/project_v_candidate_cross_method_summary.csv`
 - `data/processed/project_v_m2_cluster_assignments.csv`
 - `data/processed/project_v_m3_run_summary.csv`
 - `data/processed/project_v_m3_star_stability.csv`
-- `figures/project2_candidate_cross_method_evidence_summary.png`
+- `figures/project_v_candidate_cross_method_evidence_summary.png`
 - `figures/project_v_m3_validation_summary.png`
-- `report/project2_scientific_interpretation_and_final_packaging.md`
+- `report/project_v_scientific_interpretation_and_final_packaging.md`
 - `report/project_v_milestone3_gmm_stability_sensitivity_validation.md`
 
 ## Results

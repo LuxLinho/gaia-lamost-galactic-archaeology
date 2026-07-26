@@ -1,8 +1,8 @@
-- `project3_distance_recovered_candidates.csv` — Project 3 candidate table after merging recovered parallax/distance fields from existing processed Gaia–LAMOST tables.
-- `project3_distance_recovery_summary.csv` — One-row summary of Project 3 distance/parallax recovery coverage and angular-momentum readiness.
+- `project_ii_distance_recovered_candidates.csv` — Project II candidate table after merging recovered parallax/distance fields from existing processed Gaia–LAMOST tables.
+- `project_ii_distance_recovery_summary.csv` — One-row summary of Project II distance/parallax recovery coverage and angular-momentum readiness.
 
-- `project3_angular_momentum_candidates.csv` — Candidate-level Project 3 angular-momentum diagnostics computed from distance-recovered inputs.
-- `project3_angular_momentum_summary.csv` — Summary statistics and simple diagnostic class counts for Project 3 angular-momentum analysis.
+- `project_ii_angular_momentum_candidates.csv` — Candidate-level Project II angular-momentum diagnostics computed from distance-recovered inputs.
+- `project_ii_angular_momentum_summary.csv` — Summary statistics and simple diagnostic class counts for Project II angular-momentum analysis.
 
 - `project_ii_orbital_family_candidates.csv` — Candidate-level Project II orbital-family interpretation table, including interpretation labels, confidence flags, angular-momentum diagnostics, velocity evidence, metallicity evidence, and distance provenance.
 - `project_ii_orbital_family_summary.csv` — Summary table of Project II orbital-family interpretation groups, including counts and median metallicity, velocity, and angular-momentum diagnostics.

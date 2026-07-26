@@ -103,9 +103,9 @@ The expected outcome is a reproducible undergraduate-level research portfolio pr
 
 The project is designed as a foundation for future research opportunities in physics, astronomy, scientific computing, or data-driven science.
 
-## Project 2: Machine-learning Assisted Stellar Population Clustering
+## Project V: Machine-learning Assisted Stellar Population Clustering
 
-Project 2 extends Project 1 from exploratory candidate diagnostics toward unsupervised stellar population clustering.
+Project V extends Project I from exploratory candidate diagnostics toward unsupervised stellar population clustering.
 
 ### Scientific Aim
 
@@ -124,7 +124,7 @@ This table is selected because it combines:
 - derived photometric and tangential-velocity features
 - Galactic coordinates
 - Galactocentric position and velocity features
-- Project 1 candidate flags for later interpretation
+- Project I candidate flags for later interpretation
 
 ### Research Question
 
@@ -136,7 +136,7 @@ A combined chemo-kinematic feature space may separate disk-like stars, metal-poo
 
 ### Methodological Principle
 
-Project 1 candidate flags should not be used as clustering labels. They should be reserved for post-hoc interpretation of clusters or outliers.
+Project I candidate flags should not be used as clustering labels. They should be reserved for post-hoc interpretation of clusters or outliers.
 
 ### Planned Feature Spaces
 
@@ -157,4 +157,4 @@ Project 1 candidate flags should not be used as clustering labels. They should b
 
 ### Scientific Caution
 
-Any clusters found in Project 2 should be interpreted as exploratory structures in feature space, not as confirmed stellar streams, merger debris, or new Galactic substructures without further validation.
+Any clusters found in Project V should be interpreted as exploratory structures in feature space, not as confirmed stellar streams, merger debris, or new Galactic substructures without further validation.

@@ -27,47 +27,47 @@ The report should focus on explaining the scientific workflow and preliminary fi
 
 Figures generated during the project should be referenced and discussed in the report when relevant.
 
-## Project 1 Report Status
+## Project I Report Status
 
-Project 1 currently includes two main report files:
+Project I currently includes two main report files:
 
-- `project1_final_report_draft.md`
-- `project1_milestone7_scientific_interpretation_draft.md`
+- `project_i_final_report_draft.md`
+- `project_i_milestone7_scientific_interpretation_draft.md`
 
-The final report draft is the main presentation document for Project 1. It summarizes the data sources, analysis workflow, diagnostic figures, candidate selection logic, scientific interpretation, limitations, and future directions.
+The final report draft is the main presentation document for Project I. It summarizes the data sources, analysis workflow, diagnostic figures, candidate selection logic, scientific interpretation, limitations, and future directions.
 
 The Milestone 7 scientific interpretation draft records the interpretation stage before final packaging. It is kept as a development-stage document for traceability.
 
-Project 1 should be read as an exploratory but reproducible research portfolio project. The current reports do not claim a definitive discovery of new Galactic substructure. Instead, they demonstrate a complete workflow for combining Gaia astrometry and photometry with LAMOST spectroscopy to identify and interpret candidate chemo-kinematic outliers.
+Project I should be read as an exploratory but reproducible research portfolio project. The current reports do not claim a definitive discovery of new Galactic substructure. Instead, they demonstrate a complete workflow for combining Gaia astrometry and photometry with LAMOST spectroscopy to identify and interpret candidate chemo-kinematic outliers.
 
-Future reports for Project 2 and Project 3 will build on this foundation with machine-learning clustering, stronger population classification, orbital analysis, and comparison with known Galactic substructures.
-
-
-## Project 2 Report Status
-
-Project 2 includes one main final packaging report:
-
-- `project2_scientific_interpretation_and_final_packaging.md`
-
-This report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project 1. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
-
-Project 2 should be read as an exploratory but reproducible machine-learning extension of the Gaia–LAMOST workflow. It does not claim a definitive discovery of a new Galactic substructure. Instead, it identifies evidence-ranked chemo-dynamical follow-up targets that can be tested more rigorously in Project 3 through orbital characterization and comparison with known Milky Way substructures.
-
-## Project 3 reports
-
-- `project3_milestone1_orbital_characterization_setup.md`  
-  Defines the Project 3 orbit-analysis setup, candidate inputs, required orbital features, quality-control checks, and the Milestone 2 orbit-input preparation plan.
-
-- `project3_milestone2_orbit_input_preparation.md` — prepares the candidate-level orbit input table and summarizes orbit-readiness based on astrometric, radial-velocity, and Galactocentric velocity fields.
+Future reports for Project V and Project II will build on this foundation with machine-learning clustering, stronger population classification, orbital analysis, and comparison with known Galactic substructures.
 
 
+## Project V Report Status
 
-- `project3_milestone3_orbital_diagnostics_preparation.md` — Project 3 M3 report describing readiness-aware orbital diagnostics, velocity-space diagnostics, and the distance/parallax limitation preventing physical angular-momentum calculation.
+Project V includes one main final packaging report:
+
+- `project_v_scientific_interpretation_and_final_packaging.md`
+
+This report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project I. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
+
+Project V should be read as an exploratory but reproducible machine-learning extension of the Gaia–LAMOST workflow. It does not claim a definitive discovery of a new Galactic substructure. Instead, it identifies evidence-ranked chemo-dynamical follow-up targets that can be tested more rigorously in Project II through orbital characterization and comparison with known Milky Way substructures.
+
+## Project II reports
+
+- `project_ii_milestone1_orbital_characterization_setup.md`
+  Defines the Project II orbit-analysis setup, candidate inputs, required orbital features, quality-control checks, and the Milestone 2 orbit-input preparation plan.
+
+- `project_ii_milestone2_orbit_input_preparation.md` — prepares the candidate-level orbit input table and summarizes orbit-readiness based on astrometric, radial-velocity, and Galactocentric velocity fields.
 
 
-- `project3_milestone4_distance_parallax_recovery.md` — Documents Project 3 M4 parallax/distance recovery and readiness for later angular-momentum diagnostics.
 
-- `project3_milestone5_angular_momentum_diagnostics.md` — Documents Project 3 Milestone 5 angular-momentum calculation and diagnostic interpretation.
+- `project_ii_milestone3_orbital_diagnostics_preparation.md` — Project II M3 report describing readiness-aware orbital diagnostics, velocity-space diagnostics, and the distance/parallax limitation preventing physical angular-momentum calculation.
+
+
+- `project_ii_milestone4_distance_parallax_recovery.md` — Documents Project II M4 parallax/distance recovery and readiness for later angular-momentum diagnostics.
+
+- `project_ii_milestone5_angular_momentum_diagnostics.md` — Documents Project II Milestone 5 angular-momentum calculation and diagnostic interpretation.
 
 - `project_ii_orbital_family_interpretation.md` — Project II orbital-family interpretation report using angular momentum, velocity diagnostics, metallicity flags, and distance provenance to assign candidate-level orbital-family interpretation labels.
 
