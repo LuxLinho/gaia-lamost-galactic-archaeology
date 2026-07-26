@@ -96,3 +96,8 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 - `project_v_milestone2_advanced_clustering_baseline_comparison.md` — Documents the
   blind HDBSCAN, OPTICS, and GMM baseline comparison, including the 51-fold enriched
   GMM candidate component and the boundary for physical interpretation.
+
+- `project_v_milestone3_gmm_stability_sensitivity_validation.md` — Documents the
+  M2 GMM exact reproduction check, label-independent stability tests, sensitivity
+  analysis, per-star recovery frequencies, and the conclusion that the 51.06-fold
+  enrichment is model-setting dependent rather than direct physical proof.

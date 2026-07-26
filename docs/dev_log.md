@@ -1154,3 +1154,28 @@ recall, 75% within-component candidate fraction, and 51.06-fold enrichment.
 HDBSCAN assigned all candidates to noise, while OPTICS produced a non-informative
 single-cluster fallback. The result is retained as a strong but algorithm-dependent
 target for Milestone 3 stability validation.
+
+## 2026-07-26 — Project V Milestone 3: GMM stability and sensitivity validation
+
+Completed the GMM validation milestone for the Project V M2 candidate-rich
+component.
+
+Changes:
+- Added `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`.
+- Reproduced the M2 locked GMM baseline exactly, with ARI = 1.0 against the M2
+  GMM labels and exact recovery of all 32 reference-component members.
+- Used label-independent maximum Jaccard overlap with the 32-star reference set
+  to match components across perturbed runs.
+- Ran 30 random-seed tests, 30 independent 80 percent no-replacement subsample
+  tests, five feature ablations, five scaler comparisons, component counts 6-12,
+  and four covariance structures.
+- Wrote per-run, per-star, per-experiment, group, and validation-family summary
+  CSV outputs under `data/processed/`.
+- Generated M3 validation summary, per-star recovery, and model-specification
+  sensitivity figures under `figures/`.
+- Added `report/project_v_milestone3_gmm_stability_sensitivity_validation.md`.
+
+Result:
+The M2 51.06-fold candidate enrichment is exactly reproducible under the locked
+configuration and stable enough for follow-up prioritization, but it is best
+classified as model-setting dependent rather than standalone physical evidence.

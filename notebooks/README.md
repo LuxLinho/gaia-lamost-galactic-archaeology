@@ -81,3 +81,9 @@ Each notebook should include:
 - `26_project_v_advanced_clustering_baseline_comparison.ipynb` — Performs blind
   advanced-clustering model selection and evaluates locked HDBSCAN, OPTICS, and GMM
   assignments against the external 27-star candidate catalogue.
+
+- `27_project_v_gmm_stability_sensitivity_validation.ipynb` — Validates the M2
+  nine-component full-covariance GMM with exact baseline reproduction,
+  label-independent Jaccard component matching, random-seed tests, 80 percent
+  subsampling, feature ablations, scaler comparisons, component-count sensitivity,
+  and covariance-structure sensitivity.

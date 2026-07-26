@@ -88,3 +88,11 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
   diagnostics.
 - `project_v_m2_locked_clustering_candidate_recovery.png` — PCA visualization of
   locked cluster assignments with the 27 external candidates overlaid.
+
+- `project_v_m3_validation_summary.png` — M3 summary of reference recall, Jaccard
+  overlap, candidate enrichment, and matched-component size across validation
+  families.
+- `project_v_m3_per_star_recovery.png` — Per-star recovery frequencies for the 24
+  M2 reference candidates, 8 M2 new members, and 3 M2 omitted candidates.
+- `project_v_m3_model_specification_sensitivity.png` — GMM feature, scaler,
+  component-count, and covariance sensitivity diagnostics.

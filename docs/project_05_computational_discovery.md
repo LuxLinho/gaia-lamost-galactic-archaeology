@@ -29,6 +29,8 @@ Current completed methods include:
 - DBSCAN baseline clustering
 - Small DBSCAN parameter sweep
 - Cross-method candidate evidence summary
+- HDBSCAN / OPTICS / GMM baseline comparison
+- GMM stability and sensitivity validation
 
 ## Existing Repository Outputs
 
@@ -40,13 +42,29 @@ Relevant existing work includes:
 - `notebooks/10_project2_dbscan_baseline_clustering.ipynb`
 - `notebooks/11_project2_dbscan_robustness_analysis.ipynb`
 - `notebooks/12_project2_candidate_cross_method_summary.ipynb`
+- `notebooks/25_project_v_advanced_clustering_readiness_and_feature_audit.ipynb`
+- `notebooks/26_project_v_advanced_clustering_baseline_comparison.ipynb`
+- `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`
 - `data/processed/project2_candidate_cross_method_summary.csv`
+- `data/processed/project_v_m2_cluster_assignments.csv`
+- `data/processed/project_v_m3_run_summary.csv`
+- `data/processed/project_v_m3_star_stability.csv`
 - `figures/project2_candidate_cross_method_evidence_summary.png`
+- `figures/project_v_m3_validation_summary.png`
 - `report/project2_scientific_interpretation_and_final_packaging.md`
+- `report/project_v_milestone3_gmm_stability_sensitivity_validation.md`
 
 ## Results
 
 The initial computational-discovery layer has been completed. It produced a cross-method candidate summary that compares evidence from multiple feature-space and clustering approaches.
+
+Project V advanced clustering now adds a larger 1,838-star discovery-parent sample.
+Milestone 2 found a nine-component full-covariance GMM component with 32 stars,
+including 24 of the 27 known candidates and 8 additional members, corresponding
+to 51.06-fold candidate enrichment over the parent sample. Milestone 3 reproduced
+that baseline exactly, then showed that the enriched component is stable under
+the locked specification and many random initializations but remains sensitive to
+subsampling and model specification choices.
 
 ## Validation and Uncertainty
 
@@ -56,8 +74,14 @@ Current validation includes:
 - DBSCAN parameter sensitivity
 - Candidate evidence scoring
 - Visual inspection of embedding and clustering behavior
+- Exact M2 GMM reproduction with ARI = 1.0
+- Label-independent GMM component matching by Jaccard overlap
+- Random-seed, subsample, feature, scaler, component-count, and covariance
+  sensitivity tests
 
-Further validation will later include additional algorithms and consensus clustering.
+Further validation will later include additional algorithms, consensus clustering,
+orbital-action checks, detailed abundance information, and external literature
+comparison.
 
 ## Discussion
 

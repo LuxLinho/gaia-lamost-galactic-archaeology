@@ -47,3 +47,20 @@
   enrichment for every recovered group.
 - `project_v_m2_candidate_recovery_summary.csv` — Algorithm-level candidate
   recovery comparison.
+
+## Project V Milestone 3
+
+- `project_v_m3_run_summary.csv` — Per-run GMM stability and sensitivity metrics,
+  including ARI versus M2, matched-component Jaccard overlap, reference recall,
+  candidate fraction, and candidate enrichment.
+- `project_v_m3_star_stability.csv` — Per-star selection frequency across all M3
+  validation runs, with flags for the 24 M2 reference candidates, 8 M2 new
+  members, and 3 M2 omitted candidates.
+- `project_v_m3_star_stability_by_experiment.csv` — Per-run, per-star matched
+  component selections, labels, and probabilities for every M3 validation run.
+- `project_v_m3_group_stability_summary.csv` — Group-level recovery-frequency
+  summary for reference candidates, new members, omitted candidates, and field
+  stars.
+- `project_v_m3_experiment_summary.csv` — Validation-family summary for random
+  seeds, 80 percent subsamples, feature ablations, scalers, component counts, and
+  covariance types.
