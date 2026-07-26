@@ -92,3 +92,7 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 ## Project V reports
 
 - `project_v_milestone1_advanced_clustering_readiness.md` — Defines and audits the 1,838-star discovery parent sample, core and extended feature spaces, robust-scaling strategy, known-candidate recovery control, and readiness for HDBSCAN, OPTICS, and Gaussian Mixture Model comparison.
+
+- `project_v_milestone2_advanced_clustering_baseline_comparison.md` — Documents the
+  blind HDBSCAN, OPTICS, and GMM baseline comparison, including the 51-fold enriched
+  GMM candidate component and the boundary for physical interpretation.

@@ -1144,3 +1144,13 @@ The milestone computes Galactocentric angular-momentum components and derived di
 - `Ltot_kpc_kms`
 
 All 27 distance-recovered candidates passed the angular-momentum diagnostic readiness filter. The outputs prepare the candidate sample for later orbital-family interpretation.
+
+## 2026-07-26 — Project V Milestone 2: Advanced-clustering baseline comparison
+
+Completed blind model selection for HDBSCAN, OPTICS, and Gaussian Mixture Models on
+the 1,838-star discovery sample. The locked nine-component full-covariance GMM
+isolated a 32-star component containing 24 of 27 known candidates, yielding 88.9%
+recall, 75% within-component candidate fraction, and 51.06-fold enrichment.
+HDBSCAN assigned all candidates to noise, while OPTICS produced a non-informative
+single-cluster fallback. The result is retained as a strong but algorithm-dependent
+target for Milestone 3 stability validation.

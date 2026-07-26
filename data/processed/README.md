@@ -34,3 +34,16 @@
 - `project_v_advanced_clustering_feature_audit.csv` — Feature-level completeness, distribution, scaling, and clustering-role audit for the Project V core and extended feature spaces.
 - `project_v_core_feature_correlations.csv` — Pearson correlation matrix for the five Project V core clustering features.
 - `project_v_advanced_clustering_readiness_summary.csv` — Project V parent-sample integrity, candidate-recovery coverage, algorithm availability, and preprocessing summary.
+
+## Project V Milestone 2
+
+- `project_v_m2_blind_model_selection.csv` — Complete blind HDBSCAN, OPTICS, and
+  GMM model-comparison grid.
+- `project_v_m2_locked_model_summary.csv` — Locked model parameters and internal
+  clustering statistics.
+- `project_v_m2_cluster_assignments.csv` — Per-star locked-model assignments and
+  GMM maximum-membership probabilities.
+- `project_v_m2_candidate_recovery_by_group.csv` — Candidate counts, recall, and
+  enrichment for every recovered group.
+- `project_v_m2_candidate_recovery_summary.csv` — Algorithm-level candidate
+  recovery comparison.

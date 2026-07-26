@@ -1,0 +1,4 @@
+algorithm,selection_rule,parameters,n_clusters,noise_count,noise_fraction,clustered_count,clustered_fraction,smallest_cluster,largest_cluster,silhouette,calinski_harabasz,davies_bouldin,bic,aic
+HDBSCAN,admissible_internal_structure,"{""cluster_selection_method"": ""eom"", ""min_cluster_size"": 15, ""min_samples"": 20}",2,804,0.43743199129488575,1034,0.5625680087051143,136,898,0.40681884513610045,429.95891335580376,0.8997958041044526,,
+OPTICS,fallback_maximum_coverage,"{""min_cluster_size"": 0.02, ""min_samples"": 10, ""xi"": 0.03}",1,0,0.0,1838,1.0,1838,1838,,,,,
+GMM,minimum_bic,"{""covariance_type"": ""full"", ""n_components"": 9}",9,0,0.0,1838,1.0,32,337,0.05937117195176967,221.65857939546254,2.770307029212461,16518.065977508253,15480.976516560113

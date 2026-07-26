@@ -1,0 +1,4 @@
+algorithm,known_candidate_count,candidates_in_non_noise_groups,non_noise_candidate_recovery_fraction,candidates_assigned_to_noise,noise_candidate_fraction,best_non_noise_group_label,best_non_noise_group_size,best_non_noise_group_candidate_count,best_non_noise_group_candidate_recall,best_non_noise_group_enrichment
+HDBSCAN,27,0,0.0,27,1.0,1,136,0,0.0,0.0
+OPTICS,27,27,1.0,0,0.0,0,1838,27,1.0,1.0
+GMM,27,27,1.0,0,0.0,5,32,24,0.8888888888888888,51.05555555555555

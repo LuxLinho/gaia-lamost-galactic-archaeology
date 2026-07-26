@@ -83,3 +83,8 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_iv_feh_by_priority_tier.png` — Project IV [Fe/H] comparison across Project III priority tiers.
 
 - `project_v_advanced_clustering_feature_audit.png` — Project V diagnostic figure showing the five core-feature distributions and their correlation matrix.
+
+- `project_v_m2_model_selection.png` — Blind HDBSCAN, OPTICS, and GMM model-selection
+  diagnostics.
+- `project_v_m2_locked_clustering_candidate_recovery.png` — PCA visualization of
+  locked cluster assignments with the 27 external candidates overlaid.
