@@ -1,161 +1,184 @@
+<div align="center">
+
 # Galactic Archaeology with Gaia DR3 & LAMOST DR9
 
-## A Personal Independent Research Program in Galactic Dynamics and Stellar Populations
+**A personal independent research program in Galactic dynamics, stellar populations, computational discovery, and scientific validation**
 
-This repository hosts a personal independent research program in Galactic archaeology, using Gaia DR3 and LAMOST DR9 to identify dynamically and chemically distinct stellar populations in the Milky Way through reproducible computational methods.
+![Project Status](https://img.shields.io/badge/status-active_research-2f6f9f)
+![Research Program](https://img.shields.io/badge/program-six_project_structure-4051b5)
+![Python](https://img.shields.io/badge/python-3.x-3776ab)
+![Reproducibility](https://img.shields.io/badge/reproducible-notebooks_%2B_reports-4c8c2b)
 
-The project is designed as an open, reproducible research program rather than a one-time coursework-style analysis. It connects data foundation, Galactic dynamics, stellar-population analysis, chemical evolution, computational discovery, and scientific validation.
+[Program Charter](docs/research_program_charter.md) ·
+[Current Status](docs/current_research_status.md) ·
+[Project V M3 Report](report/project_v_milestone3_gmm_stability_sensitivity_validation.md) ·
+[M3 Notebook](notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb)
 
-For the full research-program structure, see:
+</div>
 
-- `docs/research_program_charter.md`
+Repository: [github.com/LuxLinho/gaia-lamost-galactic-archaeology](https://github.com/LuxLinho/gaia-lamost-galactic-archaeology)
 
----
+## Project Overview
+
+This repository develops a reproducible Gaia-LAMOST Galactic archaeology workflow using Gaia DR3 astrometry and photometry together with LAMOST DR9 spectroscopy. The project is structured as a six-part independent research program rather than a single notebook analysis.
+
+The current repository contains a validated data foundation, candidate-level dynamical diagnostics, baseline `galpy` orbit integration, first-pass stellar-population interpretation, metallicity-readiness analysis, computational-discovery experiments, and a scientific-validation roadmap.
 
 ## Research Goal
 
-Use Gaia DR3 and LAMOST DR9 to identify dynamically and chemically distinct stellar populations in the Milky Way through reproducible computational methods.
+Use Gaia DR3 and LAMOST DR9 to identify, prioritize, and validate dynamically and chemically unusual stars in the Milky Way through transparent computational methods.
 
----
+The present outputs should be read as an exploratory but reproducible research portfolio. They support follow-up prioritization and method development; they do not yet claim a definitive discovery of a new Galactic substructure.
 
-## Research Program Structure
+## Research Projects
 
-The full program is organized into six independent but connected research projects:
+| Project | Current Status | Current Role | Primary Index |
+|---|---|---|---|
+| Project I — Data Foundation | Initial version completed | Gaia-LAMOST sample construction, quality control, feature engineering, and candidate catalogue foundation | [docs/project_01_data_foundation.md](docs/project_01_data_foundation.md) |
+| Project II — Orbital Dynamics | Baseline orbit integration and consistency analysis completed | Angular momentum, baseline `galpy` orbit parameters, and internal dynamical consistency checks | [docs/project_02_orbital_dynamics.md](docs/project_02_orbital_dynamics.md) |
+| Project III — Stellar Population Analysis | Initial classification and priority review completed | Broad population labels and candidate follow-up priority tiers | [docs/project_03_stellar_populations.md](docs/project_03_stellar_populations.md) |
+| Project IV — Chemical Evolution | Metallicity-readiness layer completed | Current [Fe/H]-based chemical triage and follow-up readiness; full abundance tagging remains future work | [docs/project_04_chemical_evolution.md](docs/project_04_chemical_evolution.md) |
+| Project V — Computational Discovery | GMM stability and sensitivity validation completed | PCA, UMAP, DBSCAN, HDBSCAN, OPTICS, GMM comparison, and explicit model-dependence tests | [docs/project_05_computational_discovery.md](docs/project_05_computational_discovery.md) |
+| Project VI — Scientific Validation | Validation roadmap and uncertainty inventory completed | Validation priorities, risk inventory, and roadmap for uncertainty propagation and literature comparison | [docs/project_06_scientific_validation.md](docs/project_06_scientific_validation.md) |
 
-1. **Project I — Data Foundation**  
-   Build the Gaia-LAMOST data foundation through data acquisition, cross-match, quality control, feature engineering, and candidate discovery.
+## Current Program Status
 
-2. **Project II — Orbital Dynamics**  
-   Extend the candidate catalogue with orbit integration, angular momentum, orbital energy, action-space analysis, and orbit-family interpretation.
+The repository has completed the transition into a six-project research-program structure. The major current emphasis is no longer directory restructuring; it is strengthening validation, uncertainty propagation, literature comparison, and scientific interpretation boundaries.
 
-3. **Project III — Stellar Population Analysis**  
-   Classify candidate stars into Galactic populations and compare them with disk, halo, and merger-related structures.
+Current scientific focus:
 
-4. **Project IV — Chemical Evolution**  
-   Use LAMOST chemical information to study metallicity, abundance patterns, and chemical tagging.
+- Preserve the 27-star candidate sample as the main follow-up target set.
+- Use Project II orbit and angular-momentum diagnostics to prioritize dynamically unusual stars.
+- Use Project III and Project IV outputs to organize population and metallicity follow-up.
+- Use Project V clustering validation to separate computational recovery from physical interpretation.
+- Use Project VI to plan Monte Carlo uncertainty propagation, potential-model sensitivity tests, and external literature or catalogue comparison.
 
-5. **Project V — Computational Discovery**  
-   Apply dimensionality reduction, clustering, consensus analysis, and anomaly detection to identify robust structures in the data.
+## Key Results
 
-6. **Project VI — Scientific Validation**  
-   Validate the results through uncertainty propagation, literature comparison, and scientific interpretation.
+| Result | Value | Context |
+|---|---:|---|
+| Project V discovery parent sample | 1,838 stars | Gaia-LAMOST larger chemo-kinematic feature table |
+| Known cross-method candidates | 27 stars | Candidate set carried forward from earlier computational discovery |
+| M2 GMM reference component | 32 members | Nine-component full-covariance GMM using five robust-scaled features |
+| Known candidates recovered in reference component | 24 / 27 | M2 candidate-rich component |
+| Additional non-candidate members in reference component | 8 stars | Newly grouped with the 24 known candidates by the M2 GMM |
+| Baseline candidate enrichment | 51.06x | Candidate fraction in the reference component relative to the parent sample |
+| M3 exact baseline reproduction | ARI = 1.000 | M2 labels reproduced by the locked M2 GMM configuration |
+| M3 reference recovery | 32 / 32 | Exact recovery of the M2 reference component under the locked configuration |
+| 30 random-seed tests | mean Jaccard = 0.7479 | Label-independent overlap with the 32-star reference component |
+| 30 independent 80 percent subsamples | mean Jaccard = 0.6555 | Subsample-fit sensitivity test |
+| Model-specification sensitivity | mean Jaccard = 0.715; minimum = 0.344 | Feature, scaler, component-count, and covariance checks |
+| Per-star recovery: 24 reference candidates | mean selection frequency = 0.8786 | Across all Project V M3 validation runs |
+| Per-star recovery: 8 additional members | mean selection frequency = 0.4131 | Less stable than the known-candidate core |
+| Per-star recovery: 3 omitted candidates | mean selection frequency = 0.0569 | Usually remain outside the matched M2-like component |
 
----
+## Project V M3 Stability Conclusion
 
-## Current Status
+Project V Milestone 3 tested whether the M2 GMM candidate-enriched component is numerically reproducible and scientifically robust. The exact M2 configuration is:
 
-The repository is currently transitioning from milestone-based development into a six-part research-program structure.
+- Features: `feh`, `rv`, `tangential_velocity_kms`, `bp_rp`, `absolute_g_mag`
+- Preprocessing: `RobustScaler`
+- Model: `GaussianMixture(n_components=9, covariance_type="full", n_init=5, random_state=42, reg_covar=1e-6)`
+- Matching method: label-independent maximum Jaccard overlap with the 32-star M2 reference component
 
-Existing work maps onto the new structure as follows:
+The candidate-enriched GMM component is exactly reproducible under the locked M2 configuration, but its membership changes under alternative sampling and modelling assumptions. It is therefore classified as **model-dependent** and retained as a follow-up prioritization signal rather than evidence of a physically distinct stellar population.
 
-| Existing Work | New Research-Program Mapping | Status |
-|---|---|---|
-| Project 1: Gaia-LAMOST cross-match, quality control, feature engineering, and candidate discovery | Project I — Data Foundation | Completed initial version |
-| Project 2: PCA, UMAP, DBSCAN, robustness testing, and cross-method candidate summary | Project V — Computational Discovery | Completed initial version |
-| Project 3: Orbit input preparation, distance recovery, and angular-momentum diagnostics | Project II — Orbital Dynamics | In progress |
+> **Computational recovery is not equivalent to physical discovery.**
+>
+> Physical interpretation still requires orbital coherence, detailed abundance information, uncertainty propagation, selection-function analysis, and external literature or catalogue comparison.
 
-During this transition, the repository keeps its current flat structure. Large directory restructuring is intentionally postponed until the research outputs are stable.
+Primary M3 files:
 
----
+- [Project V M3 report](report/project_v_milestone3_gmm_stability_sensitivity_validation.md)
+- [Project V M3 notebook](notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb)
+- [M3 run summary](data/processed/project_v_m3_run_summary.csv)
+- [M3 per-star stability](data/processed/project_v_m3_star_stability.csv)
+- [M3 per-run per-star selections](data/processed/project_v_m3_star_stability_by_experiment.csv)
+- [M3 group stability summary](data/processed/project_v_m3_group_stability_summary.csv)
+- [M3 experiment summary](data/processed/project_v_m3_experiment_summary.csv)
 
-## Immediate Next Step
+## Main Outputs by Project
 
-The current focus is:
+| Project | Representative Outputs |
+|---|---|
+| Project I — Data Foundation | [Candidate diagnostics](data/processed/gaia_lamost_candidate_diagnostic_table.csv), [larger chemo-kinematic features](data/processed/gaia_lamost_larger_chemo_kinematic_features.csv), [candidate summary](data/processed/gaia_lamost_candidate_summary_table.csv) |
+| Project II — Orbital Dynamics | [Orbital-family candidates](data/processed/project_ii_orbital_family_candidates.csv), [galpy orbit candidates](data/processed/project_ii_galpy_orbit_candidates.csv), [orbit-AM consistency](data/processed/project_ii_orbit_angular_momentum_consistency.csv), [baseline orbit report](report/project_ii_galpy_baseline_orbit_integration.md) |
+| Project III — Stellar Population Analysis | [Population candidates](data/processed/project_iii_population_candidates.csv), [priority candidates](data/processed/project_iii_population_priority_candidates.csv), [classification report](report/project_iii_initial_population_classification.md), [priority review](report/project_iii_population_classification_review.md) |
+| Project IV — Chemical Evolution | [Metallicity candidates](data/processed/project_iv_metallicity_candidates.csv), [metallicity summary](data/processed/project_iv_metallicity_summary.csv), [chemical-readiness report](report/project_iv_metallicity_structure_and_chemical_readiness.md) |
+| Project V — Computational Discovery | [Cross-method candidate summary](data/processed/project2_candidate_cross_method_summary.csv), [M2 GMM assignments](data/processed/project_v_m2_cluster_assignments.csv), [M3 run summary](data/processed/project_v_m3_run_summary.csv), [M3 report](report/project_v_milestone3_gmm_stability_sensitivity_validation.md) |
+| Project VI — Scientific Validation | [Uncertainty inventory](data/processed/project_vi_uncertainty_inventory.csv), [validation priority candidates](data/processed/project_vi_validation_priority_candidates.csv), [validation report](report/project_vi_validation_uncertainty_inventory.md) |
 
-**Project II — Orbital Dynamics: Orbital-Family Interpretation**
+Additional indexes:
 
-This step uses the angular-momentum candidate table to interpret possible orbital families based on angular momentum, velocity diagnostics, metallicity, and distance provenance.
-
----
+- [Notebook index](notebooks/README.md)
+- [Processed data index](data/processed/README.md)
+- [Figure index](figures/README.md)
+- [Report index](report/README.md)
+- [Development log](docs/dev_log.md)
 
 ## Repository Structure
 
-The repository currently keeps a flat, development-friendly structure:
+```text
+gaia-lamost-galactic-archaeology/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+├── docs/
+├── figures/
+├── notebooks/
+├── report/
+├── src/
+├── requirements.txt
+└── README.md
+```
 
-    gaia-lamost-galactic-archaeology/
-    ├── data/
-    ├── docs/
-    ├── figures/
-    ├── notebooks/
-    ├── report/
-    ├── src/
-    └── README.md
+The repository intentionally keeps a compact, flat research layout. Notebook outputs, processed tables, figures, and reports are indexed separately so that the workflow remains traceable without hiding the analysis behind premature packaging.
 
-A larger research-program directory structure may be introduced later after the main scientific outputs are stable.
+## Reproducibility Workflow
 
----
+The workflow is notebook-led and report-backed:
 
-## Main Outputs So Far
+1. Run the relevant notebook from `notebooks/`.
+2. Write processed tables to `data/processed/`.
+3. Save diagnostic figures to `figures/`.
+4. Document scientific interpretation, limitations, and next steps in `report/`.
+5. Record project-level status in `docs/`.
 
-### Project I — Data Foundation
+For environment setup, install the dependencies listed in [requirements.txt](requirements.txt). Most analyses use Python scientific packages including `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `astropy`, `astroquery`, `umap-learn`, `hdbscan`, `galpy`, and `jupyter`.
 
-Initial Gaia-LAMOST data foundation completed, including:
+## Scientific Interpretation Boundary
 
-- Gaia DR3 sample preparation
-- LAMOST DR9 cross-match
-- Match-quality assessment
-- Quality-control filtering
-- Feature engineering
-- Candidate discovery
-- Candidate Catalog v1
+This repository is designed to make the distinction between computational evidence and astrophysical interpretation explicit.
 
-### Project V — Computational Discovery
+Current results support the following cautious claims:
 
-Initial computational-discovery layer completed, including:
+- The candidate sample is rich in dynamically hot, halo-like, retrograde, radial, or high-inclination behavior under current baseline assumptions.
+- The Project V M2 GMM candidate-enriched component is exactly reproducible under its locked configuration.
+- The same GMM structure is sensitive to sampling and modelling choices, so it should guide follow-up rather than define a confirmed stellar population.
+- Current chemistry is mostly limited to [Fe/H]; detailed abundance tagging has not yet been completed.
+- Orbit and population interpretations still require uncertainty propagation, potential-model sensitivity, selection-function analysis, and literature comparison.
 
-- PCA feature-space analysis
-- UMAP embedding analysis
-- DBSCAN baseline clustering
-- Small parameter-sweep robustness analysis
-- Cross-method candidate evidence summary
+Claims that are intentionally not made at this stage:
 
-### Project II — Orbital Dynamics
-
-Current orbital-dynamics work includes:
-
-- Orbit-input preparation
-- Distance-recovery preparation
-- Velocity-space orbital diagnostics
-- Angular-momentum diagnostics
-- Candidate-level orbital interpretation in progress
-
----
+- No new physically distinct stellar population is claimed.
+- No firm membership assignment to Gaia-Sausage-Enceladus, Sequoia, Helmi Stream, Nyx, Splash, or another named structure is claimed.
+- No publication-grade orbit solution is claimed before uncertainty propagation and potential-model sensitivity testing.
 
 ## Long-Term Deliverables
 
-The final research program aims to produce:
+The long-term research program aims to produce:
 
 - Candidate Catalog
 - Orbit Catalog
 - Population Catalog
 - Chemical Catalog
 - Computational Discovery Catalog
-- Publication-quality figures
-- Research-paper-style tables
-- Methodology and reproducibility documentation
+- Scientific Validation Report
+- Publication-quality figures and manuscript-style tables
 - A reproducible computational workflow
-- A LaTeX manuscript in A&A-style or MNRAS-style format
+- A manuscript-style synthesis suitable for later refinement toward A&A- or MNRAS-style presentation
 
-The manuscript does not need to be submitted immediately, but the long-term goal is to reach a standard close to submission readiness.
+## License and Usage
 
----
-
-## Research Standard
-
-Each research project follows the same scientific structure:
-
-1. Scientific Question
-2. Background and Motivation
-3. Data and Methods
-4. Results
-5. Validation and Uncertainty
-6. Discussion
-7. Deliverables
-
-This shared structure ensures that the repository develops as a coherent scientific program rather than a collection of disconnected notebooks.
-
----
-
-## License and Reproducibility
-
-This repository is developed as an open personal research portfolio. Data-processing steps, notebooks, figures, and reports are documented to support reproducibility and later scientific review.
+No repository license file is currently present. Until a license is added, reuse should be treated as not formally licensed. The repository is maintained as a personal independent research portfolio with reproducible notebooks, generated data products, figures, and reports for scientific review and follow-up development.
