@@ -89,3 +89,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_vi_validation_uncertainty_inventory.md` — Documents the Project VI validation roadmap, uncertainty inventory, and candidate-level validation priorities.
 
+## Project V reports
+
+- `project_v_milestone1_advanced_clustering_readiness.md` — Defines and audits the 1,838-star discovery parent sample, core and extended feature spaces, robust-scaling strategy, known-candidate recovery control, and readiness for HDBSCAN, OPTICS, and Gaussian Mixture Model comparison.

@@ -82,3 +82,4 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_iv_feh_by_population_group.png` — Project IV [Fe/H] comparison across Project III population groups.
 - `project_iv_feh_by_priority_tier.png` — Project IV [Fe/H] comparison across Project III priority tiers.
 
+- `project_v_advanced_clustering_feature_audit.png` — Project V diagnostic figure showing the five core-feature distributions and their correlation matrix.

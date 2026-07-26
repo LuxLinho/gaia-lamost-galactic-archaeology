@@ -76,3 +76,4 @@ Each notebook should include:
 
 - `24_project_vi_validation_uncertainty_inventory.ipynb` — Reviews Project VI validation priorities and uncertainty inventory for the current Gaia-LAMOST candidate sample.
 
+- `25_project_v_advanced_clustering_readiness_and_feature_audit.ipynb` — Defines the 1,838-star Project V discovery parent sample, audits core and extended feature spaces, verifies external recovery coverage for the 27 known candidates, and records preprocessing decisions for advanced clustering.
