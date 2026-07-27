@@ -1169,6 +1169,42 @@ Changes:
 - Added `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`.
 - Reproduced the M2 locked GMM baseline exactly, with ARI = 1.0 against the M2
   GMM labels and exact recovery of all 32 reference-component members.
+
+## 2026-07-27 — Project V Milestone 4: GMM cross-domain validation
+
+Completed cross-domain validation of the 32-star M2/M3 GMM reference component
+against currently available Project II/III/IV/VI candidate-level products.
+
+Outputs added:
+
+- `notebooks/28_project_v_gmm_cross_domain_validation.ipynb`
+- `data/processed/project_v_gmm_cross_domain_membership.csv`
+- `data/processed/project_v_gmm_cross_domain_coverage_summary.csv`
+- `data/processed/project_v_gmm_cross_domain_group_summary.csv`
+- `data/processed/project_v_gmm_cross_domain_statistics.csv`
+- `data/processed/project_v_gmm_cross_domain_evidence_assessment.csv`
+- `figures/project_v_gmm_cross_domain_orbital_comparison.png`
+- `figures/project_v_gmm_cross_domain_population_composition.png`
+- `figures/project_v_gmm_cross_domain_stability_evidence.png`
+- `report/project_v_milestone4_gmm_cross_domain_validation.md`
+
+Key result:
+
+- The 24 recovered known candidates have complete candidate-level Project
+  II/III/IV/VI coverage and retain supporting orbital/population context.
+- The 8 additional GMM members have 0/8 current held-out orbital, population,
+  chemical-readiness, and validation-risk coverage.
+- The 3 omitted known candidates also retain plausible candidate-level
+  orbital/population evidence, so GMM membership is not equivalent to physical
+  candidate validity.
+
+M4 classification:
+
+- Partially supported for the recovered known-candidate core.
+- Inconclusive for the 8 additional members and the full 32-star GMM component
+  because held-out cross-domain coverage is limited.
+- The M2/M3 candidate-enriched GMM component remains a model-dependent follow-up
+  prioritization signal, not evidence of a confirmed physical stellar population.
 - Used label-independent maximum Jaccard overlap with the 32-star reference set
   to match components across perturbed runs.
 - Ran 30 random-seed tests, 30 independent 80 percent no-replacement subsample

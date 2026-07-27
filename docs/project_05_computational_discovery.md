@@ -31,6 +31,7 @@ Current completed methods include:
 - Cross-method candidate evidence summary
 - HDBSCAN / OPTICS / GMM baseline comparison
 - GMM stability and sensitivity validation
+- GMM cross-domain validation against held-out candidate-level products
 
 ## Existing Repository Outputs
 
@@ -45,14 +46,19 @@ Relevant existing work includes:
 - `notebooks/25_project_v_advanced_clustering_readiness_and_feature_audit.ipynb`
 - `notebooks/26_project_v_advanced_clustering_baseline_comparison.ipynb`
 - `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`
+- `notebooks/28_project_v_gmm_cross_domain_validation.ipynb`
 - `data/processed/project_v_candidate_cross_method_summary.csv`
 - `data/processed/project_v_m2_cluster_assignments.csv`
 - `data/processed/project_v_m3_run_summary.csv`
 - `data/processed/project_v_m3_star_stability.csv`
+- `data/processed/project_v_gmm_cross_domain_membership.csv`
+- `data/processed/project_v_gmm_cross_domain_evidence_assessment.csv`
 - `figures/project_v_candidate_cross_method_evidence_summary.png`
 - `figures/project_v_m3_validation_summary.png`
+- `figures/project_v_gmm_cross_domain_stability_evidence.png`
 - `report/project_v_scientific_interpretation_and_final_packaging.md`
 - `report/project_v_milestone3_gmm_stability_sensitivity_validation.md`
+- `report/project_v_milestone4_gmm_cross_domain_validation.md`
 
 ## Results
 
@@ -66,6 +72,14 @@ that baseline exactly, then showed that the enriched component is stable under
 the locked specification and many random initializations but remains sensitive to
 subsampling and model specification choices.
 
+Milestone 4 cross-domain validation tested the same 32-star reference component
+against Project II orbital diagnostics, Project III population labels, Project IV
+chemical-readiness metadata, and Project VI validation-risk metadata. The 24
+recovered known candidates have complete candidate-level cross-domain coverage and
+supporting orbital/population context. The 8 additional GMM members currently
+have no held-out orbital, population, chemical-readiness, or validation-risk rows,
+so the full 32-star component remains inconclusive as a physical structure.
+
 ## Validation and Uncertainty
 
 Current validation includes:
@@ -78,10 +92,13 @@ Current validation includes:
 - Label-independent GMM component matching by Jaccard overlap
 - Random-seed, subsample, feature, scaler, component-count, and covariance
   sensitivity tests
+- Cross-domain coverage audit using Project II/III/IV/VI candidate-level tables
+- Explicit circularity boundary separating held-out orbital/population evidence
+  from GMM input-feature descriptions
 
-Further validation will later include additional algorithms, consensus clustering,
-orbital-action checks, detailed abundance information, and external literature
-comparison.
+Further validation will later include full 32-star orbital coverage, additional
+algorithms, consensus clustering, orbital-action checks, detailed abundance
+information, uncertainty propagation, and external literature comparison.
 
 ## Discussion
 
@@ -95,4 +112,5 @@ This project is central to the identity of the full research program because it 
 - Clustering outputs
 - Robustness analysis
 - Cross-method candidate evidence summary
+- Cross-domain validation membership and evidence-assessment tables
 - Future consensus-clustering report

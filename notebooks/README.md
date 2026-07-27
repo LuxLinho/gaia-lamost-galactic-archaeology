@@ -102,3 +102,8 @@ Each notebook should include:
   label-independent Jaccard component matching, random-seed tests, 80 percent
   subsampling, feature ablations, scaler comparisons, component-count sensitivity,
   and covariance-structure sensitivity.
+
+- `28_project_v_gmm_cross_domain_validation.ipynb` — Tests the 32-star Project V
+  GMM reference component against held-out Project II orbital diagnostics, Project
+  III population labels, Project IV chemical-readiness metadata, and Project VI
+  validation-risk metadata, with an explicit coverage and circularity audit.

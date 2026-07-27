@@ -101,3 +101,9 @@ Project V should be read as an exploratory but reproducible machine-learning ext
   M2 GMM exact reproduction check, label-independent stability tests, sensitivity
   analysis, per-star recovery frequencies, and the conclusion that the 51.06-fold
   enrichment is model-setting dependent rather than direct physical proof.
+
+- `project_v_milestone4_gmm_cross_domain_validation.md` — Documents cross-domain
+  validation of the 32-star M2/M3 GMM reference component against Project
+  II/III/IV/VI candidate-level products, concluding that the recovered
+  known-candidate core is partially supported while the 8 additional GMM members
+  and full component remain inconclusive because held-out coverage is limited.

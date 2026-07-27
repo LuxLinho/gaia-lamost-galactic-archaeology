@@ -64,3 +64,20 @@
 - `project_v_m3_experiment_summary.csv` — Validation-family summary for random
   seeds, 80 percent subsamples, feature ablations, scalers, component counts, and
   covariance types.
+
+## Project V Milestone 4
+
+- `project_v_gmm_cross_domain_membership.csv` — Parent-sample star-level table
+  combining M2 GMM membership, M3 selection frequency, and available Project
+  II/III/IV/VI candidate-level validation fields.
+- `project_v_gmm_cross_domain_coverage_summary.csv` — Coverage audit by validation
+  domain and M4 group, including the 24 recovered known candidates, 8 additional
+  GMM members, 3 omitted known candidates, and parent comparison stars.
+- `project_v_gmm_cross_domain_group_summary.csv` — Long-format group summaries for
+  selection frequency, orbital diagnostics, population labels, metallicity classes,
+  validation-risk labels, and distance-quality flags.
+- `project_v_gmm_cross_domain_statistics.csv` — Exploratory statistics comparing
+  recovered and omitted known candidates and relating M3 selection frequency to
+  held-out candidate-level diagnostics.
+- `project_v_gmm_cross_domain_evidence_assessment.csv` — Domain-level evidence
+  assessment and final classification for M4 cross-domain validation.

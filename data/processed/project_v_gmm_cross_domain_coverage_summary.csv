@@ -1,0 +1,17 @@
+validation_domain,source_file,join_key,group,group_n,available_n,missing_n,coverage_fraction,coverage_note
+orbital_dynamics,project_ii_orbit_angular_momentum_consistency.csv,source_id,recovered_known_candidate,24,24,0,1.0,"Held-out relative to the GMM feature space, but available only for the 27 known candidates."
+orbital_dynamics,project_ii_orbit_angular_momentum_consistency.csv,source_id,additional_gmm_member,8,0,8,0.0,"Held-out relative to the GMM feature space, but available only for the 27 known candidates."
+orbital_dynamics,project_ii_orbit_angular_momentum_consistency.csv,source_id,omitted_known_candidate,3,3,0,1.0,"Held-out relative to the GMM feature space, but available only for the 27 known candidates."
+orbital_dynamics,project_ii_orbit_angular_momentum_consistency.csv,source_id,parent_comparison,1803,0,1803,0.0,"Held-out relative to the GMM feature space, but available only for the 27 known candidates."
+population_labels,project_iii_population_candidates.csv,source_id,recovered_known_candidate,24,24,0,1.0,Derived from Project II orbital diagnostics and available only for known candidates.
+population_labels,project_iii_population_candidates.csv,source_id,additional_gmm_member,8,0,8,0.0,Derived from Project II orbital diagnostics and available only for known candidates.
+population_labels,project_iii_population_candidates.csv,source_id,omitted_known_candidate,3,3,0,1.0,Derived from Project II orbital diagnostics and available only for known candidates.
+population_labels,project_iii_population_candidates.csv,source_id,parent_comparison,1803,0,1803,0.0,Derived from Project II orbital diagnostics and available only for known candidates.
+chemical_readiness,project_iv_metallicity_candidates.csv,source_id,recovered_known_candidate,24,24,0,1.0,Fe/H-based readiness is descriptive because Fe/H was a GMM input; no detailed abundances are present.
+chemical_readiness,project_iv_metallicity_candidates.csv,source_id,additional_gmm_member,8,0,8,0.0,Fe/H-based readiness is descriptive because Fe/H was a GMM input; no detailed abundances are present.
+chemical_readiness,project_iv_metallicity_candidates.csv,source_id,omitted_known_candidate,3,3,0,1.0,Fe/H-based readiness is descriptive because Fe/H was a GMM input; no detailed abundances are present.
+chemical_readiness,project_iv_metallicity_candidates.csv,source_id,parent_comparison,1803,0,1803,0.0,Fe/H-based readiness is descriptive because Fe/H was a GMM input; no detailed abundances are present.
+validation_uncertainty,project_vi_uncertainty_inventory.csv,source_id,recovered_known_candidate,24,24,0,1.0,Validation-risk metadata are candidate-level and not independent physical discovery evidence.
+validation_uncertainty,project_vi_uncertainty_inventory.csv,source_id,additional_gmm_member,8,0,8,0.0,Validation-risk metadata are candidate-level and not independent physical discovery evidence.
+validation_uncertainty,project_vi_uncertainty_inventory.csv,source_id,omitted_known_candidate,3,3,0,1.0,Validation-risk metadata are candidate-level and not independent physical discovery evidence.
+validation_uncertainty,project_vi_uncertainty_inventory.csv,source_id,parent_comparison,1803,0,1803,0.0,Validation-risk metadata are candidate-level and not independent physical discovery evidence.

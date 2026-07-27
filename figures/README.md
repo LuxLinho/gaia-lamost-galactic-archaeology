@@ -96,3 +96,12 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
   M2 reference candidates, 8 M2 new members, and 3 M2 omitted candidates.
 - `project_v_m3_model_specification_sensitivity.png` — GMM feature, scaler,
   component-count, and covariance sensitivity diagnostics.
+
+- `project_v_gmm_cross_domain_orbital_comparison.png` — M4 held-out orbital
+  comparison for candidate-covered recovered and omitted known candidates, with
+  explicit note that the 8 additional GMM members lack Project II coverage.
+- `project_v_gmm_cross_domain_population_composition.png` — M4 population-label
+  coverage and composition by recovered known, additional GMM, and omitted known
+  groups.
+- `project_v_gmm_cross_domain_stability_evidence.png` — M4 comparison of M3
+  selection frequency with available held-out orbital evidence.
