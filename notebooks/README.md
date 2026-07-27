@@ -107,3 +107,8 @@ Each notebook should include:
   GMM reference component against held-out Project II orbital diagnostics, Project
   III population labels, Project IV chemical-readiness metadata, and Project VI
   validation-risk metadata, with an explicit coverage and circularity audit.
+
+- `29_project_v_final_scientific_synthesis.ipynb` — Reads the completed Project V
+  M2-M4 outputs and creates the final scientific synthesis, key-results table,
+  evidence matrix, final evidence figure, and closeout report without refitting
+  clustering models.

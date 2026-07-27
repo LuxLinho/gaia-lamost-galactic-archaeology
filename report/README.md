@@ -45,11 +45,14 @@ Future reports for Project V and Project II will build on this foundation with m
 
 ## Project V Report Status
 
-Project V includes one main final packaging report:
+Project V includes a final packaging report and a final scientific synthesis:
 
 - `project_v_scientific_interpretation_and_final_packaging.md`
+- `project_v_final_scientific_synthesis.md`
 
-This report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project I. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
+The final packaging report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project I. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
+
+The final scientific synthesis closes Project V after the later advanced-clustering, GMM stability, and cross-domain validation milestones. It classifies the 24 recovered known candidates as a partially supported candidate core, the 8 additional GMM members as inconclusive follow-up targets, and the full 32-star GMM component as model-dependent and not physically validated.
 
 Project V should be read as an exploratory but reproducible machine-learning extension of the Gaia–LAMOST workflow. It does not claim a definitive discovery of a new Galactic substructure. Instead, it identifies evidence-ranked chemo-dynamical follow-up targets that can be tested more rigorously in Project II through orbital characterization and comparison with known Milky Way substructures.
 
@@ -107,3 +110,8 @@ Project V should be read as an exploratory but reproducible machine-learning ext
   II/III/IV/VI candidate-level products, concluding that the recovered
   known-candidate core is partially supported while the 8 additional GMM members
   and full component remain inconclusive because held-out coverage is limited.
+
+- `project_v_final_scientific_synthesis.md` — Final Project V synthesis and
+  closeout report, integrating PCA, UMAP, DBSCAN, HDBSCAN, OPTICS, GMM
+  comparison, reproducibility tests, stability sensitivity, cross-domain
+  validation, evidence by membership group, and Project II/VI handoffs.

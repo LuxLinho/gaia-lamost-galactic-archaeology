@@ -1,0 +1,20 @@
+metric,value,source_file,note
+parent_sample,1838,project_v_m2_cluster_assignments.csv,Project V discovery parent sample.
+known_candidates,27,project_v_m2_cluster_assignments.csv,External known-candidate control set.
+gmm_reference_component_size,32,project_v_m2_cluster_assignments.csv,M2 GMM label 5 reference component.
+recovered_known_candidates,24 / 27,project_v_m2_cluster_assignments.csv,Known candidates recovered inside the reference component.
+additional_gmm_members,8,project_v_m2_cluster_assignments.csv,Non-candidate stars inside the reference component.
+omitted_candidates,3,project_v_m2_cluster_assignments.csv,Known candidates outside the reference component.
+baseline_candidate_enrichment,51.0556x,project_v_m2_candidate_recovery_summary.csv,Candidate fraction enrichment relative to parent sample.
+locked_baseline_ari,1.000000,project_v_m3_experiment_summary.csv,Exact M2 label reproduction under locked configuration.
+locked_baseline_membership_recovery,32 / 32,project_v_m3_experiment_summary.csv,Exact M2 reference-component recovery.
+random_seed_mean_jaccard,0.7479,project_v_m3_experiment_summary.csv,30 random-seed stability tests.
+subsample_80pct_mean_jaccard,0.6555,project_v_m3_experiment_summary.csv,30 independent 80 percent subsample tests.
+model_setting_mean_jaccard,0.715,project_v_m3_run_summary.csv,"Feature, scaler, component-count, and covariance variants."
+model_setting_min_jaccard,0.344,project_v_m3_run_summary.csv,Minimum Jaccard among model-setting variants.
+recovered_candidate_mean_selection_frequency,0.8786,project_v_m3_group_stability_summary.csv,24 recovered known candidates.
+additional_member_mean_selection_frequency,0.4131,project_v_m3_group_stability_summary.csv,8 additional GMM members.
+omitted_candidate_mean_selection_frequency,0.0569,project_v_m3_group_stability_summary.csv,3 omitted known candidates.
+recovered_candidates_orbit_am_consistent,21 / 24,project_v_gmm_cross_domain_membership.csv,Recovered known candidates with orbit-AM consistency label.
+additional_member_held_out_coverage,0 / 8,project_v_gmm_cross_domain_membership.csv,Additional members with any Project II/III/IV/VI validation row.
+omitted_candidate_held_out_coverage,3 / 3,project_v_gmm_cross_domain_membership.csv,Omitted candidates with any Project II/III/IV/VI validation row.

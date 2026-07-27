@@ -32,6 +32,7 @@ Current completed methods include:
 - HDBSCAN / OPTICS / GMM baseline comparison
 - GMM stability and sensitivity validation
 - GMM cross-domain validation against held-out candidate-level products
+- Final scientific synthesis and closeout
 
 ## Existing Repository Outputs
 
@@ -47,18 +48,23 @@ Relevant existing work includes:
 - `notebooks/26_project_v_advanced_clustering_baseline_comparison.ipynb`
 - `notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb`
 - `notebooks/28_project_v_gmm_cross_domain_validation.ipynb`
+- `notebooks/29_project_v_final_scientific_synthesis.ipynb`
 - `data/processed/project_v_candidate_cross_method_summary.csv`
 - `data/processed/project_v_m2_cluster_assignments.csv`
 - `data/processed/project_v_m3_run_summary.csv`
 - `data/processed/project_v_m3_star_stability.csv`
 - `data/processed/project_v_gmm_cross_domain_membership.csv`
 - `data/processed/project_v_gmm_cross_domain_evidence_assessment.csv`
+- `data/processed/project_v_final_key_results.csv`
+- `data/processed/project_v_final_evidence_matrix.csv`
 - `figures/project_v_candidate_cross_method_evidence_summary.png`
 - `figures/project_v_m3_validation_summary.png`
 - `figures/project_v_gmm_cross_domain_stability_evidence.png`
+- `figures/project_v_final_evidence_summary.png`
 - `report/project_v_scientific_interpretation_and_final_packaging.md`
 - `report/project_v_milestone3_gmm_stability_sensitivity_validation.md`
 - `report/project_v_milestone4_gmm_cross_domain_validation.md`
+- `report/project_v_final_scientific_synthesis.md`
 
 ## Results
 
@@ -80,6 +86,12 @@ supporting orbital/population context. The 8 additional GMM members currently
 have no held-out orbital, population, chemical-readiness, or validation-risk rows,
 so the full 32-star component remains inconclusive as a physical structure.
 
+The final synthesis closes Project V as a computational-discovery project. Its
+final classification is: the 24 recovered known candidates are a partially
+supported candidate core; the 8 additional GMM members are inconclusive follow-up
+targets only; the full 32-star GMM reference component is model-dependent and not
+physically validated.
+
 ## Validation and Uncertainty
 
 Current validation includes:
@@ -95,10 +107,14 @@ Current validation includes:
 - Cross-domain coverage audit using Project II/III/IV/VI candidate-level tables
 - Explicit circularity boundary separating held-out orbital/population evidence
   from GMM input-feature descriptions
+- Final evidence matrix separating computational reproducibility, model stability,
+  cross-method recurrence, cross-domain consistency, physical validation, and
+  common-origin interpretation
 
-Further validation will later include full 32-star orbital coverage, additional
-algorithms, consensus clustering, orbital-action checks, detailed abundance
-information, uncertainty propagation, and external literature comparison.
+Project V is scientifically synthesized and closed as a computational-discovery
+phase. Further validation is handed to Project II and Project VI, including full
+32-star orbital coverage, detailed abundance information, uncertainty
+propagation, selection-function analysis, and external literature comparison.
 
 ## Discussion
 
@@ -113,4 +129,4 @@ This project is central to the identity of the full research program because it 
 - Robustness analysis
 - Cross-method candidate evidence summary
 - Cross-domain validation membership and evidence-assessment tables
-- Future consensus-clustering report
+- Final key-results table and evidence matrix

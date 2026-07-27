@@ -81,3 +81,11 @@
   held-out candidate-level diagnostics.
 - `project_v_gmm_cross_domain_evidence_assessment.csv` — Domain-level evidence
   assessment and final classification for M4 cross-domain validation.
+
+## Project V Final Synthesis
+
+- `project_v_final_key_results.csv` — Final Project V key numerical results
+  table, with each value tied back to the source CSV used for verification.
+- `project_v_final_evidence_matrix.csv` — Final evidence matrix for the parent
+  sample, 27 known candidates, 24 recovered candidate core, 8 additional GMM
+  members, 3 omitted candidates, and the full 32-star reference component.

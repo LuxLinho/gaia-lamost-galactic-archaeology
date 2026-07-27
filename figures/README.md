@@ -105,3 +105,7 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
   groups.
 - `project_v_gmm_cross_domain_stability_evidence.png` — M4 comparison of M3
   selection frequency with available held-out orbital evidence.
+
+- `project_v_final_evidence_summary.png` — Project V final synthesis figure with
+  separate panels for baseline recovery, Jaccard stability, group selection
+  frequencies, and held-out cross-domain coverage.

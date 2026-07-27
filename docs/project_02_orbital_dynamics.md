@@ -17,7 +17,7 @@ Core components:
 - Velocity-space orbital diagnostics
 - Angular-momentum diagnostics
 - Orbit-family interpretation
-- Future orbit integration with `galpy`
+- Baseline orbit integration with `galpy`
 - Future action-space and energy-space analysis
 
 Planned orbital quantities include:
@@ -45,20 +45,33 @@ Relevant existing work includes:
 - `notebooks/14_project_ii_orbital_diagnostics_preparation.ipynb`
 - `notebooks/15_project_ii_distance_parallax_recovery.ipynb`
 - `notebooks/16_project_ii_angular_momentum_diagnostics.ipynb`
+- `notebooks/17_project_ii_orbital_family_interpretation.ipynb`
+- `notebooks/18_project_ii_galpy_orbit_integration_preparation.ipynb`
+- `notebooks/19_project_ii_galpy_baseline_orbit_integration.ipynb`
+- `notebooks/20_project_ii_orbit_angular_momentum_consistency.ipynb`
 - `data/processed/project_ii_orbit_input_candidates.csv`
 - `data/processed/project_ii_orbital_diagnostics_candidates.csv`
 - `data/processed/project_ii_distance_recovered_candidates.csv`
 - `data/processed/project_ii_angular_momentum_candidates.csv`
 - `data/processed/project_ii_angular_momentum_summary.csv`
+- `data/processed/project_ii_orbital_family_candidates.csv`
+- `data/processed/project_ii_galpy_orbit_candidates.csv`
+- `data/processed/project_ii_orbit_angular_momentum_consistency.csv`
 - `figures/project_ii_angular_momentum_lz_lperp.png`
 - `figures/project_ii_angular_momentum_lz_ltot.png`
 - `figures/project_ii_angular_momentum_feh_lz.png`
 - `report/project_ii_milestone1_orbital_characterization_setup.md`
 - `report/project_ii_milestone2_orbit_input_preparation.md`
+- `report/project_ii_galpy_baseline_orbit_integration.md`
+- `report/project_ii_orbit_angular_momentum_consistency.md`
 
 ## Results
 
-Current results include distance-recovered candidate tables and angular-momentum diagnostics for the candidate sample. These diagnostics provide a first view of prograde, retrograde, radial, and high-Lperp orbital behavior.
+Current results include distance-recovered candidate tables, angular-momentum
+diagnostics, orbital-family interpretation labels, baseline `galpy` orbit
+integration, and orbit-angular-momentum consistency checks for the known
+candidate sample. These diagnostics provide a first view of prograde, retrograde,
+radial, and high-Lperp orbital behavior.
 
 ## Validation and Uncertainty
 
@@ -70,6 +83,23 @@ Current limitations include:
 - Need for uncertainty propagation
 
 These limitations will be addressed more fully in Project VI.
+
+## Project V Handoff
+
+Project V final synthesis identifies 8 additional GMM members that share the
+locked Project V 32-star reference component but currently have no held-out
+Project II orbital coverage. Project II should treat these stars as follow-up
+targets only, not confirmed physical members.
+
+Recommended next work:
+
+- recover or derive reliable distances, positions, proper motions, and radial
+  velocities for the 8 additional GMM members where feasible;
+- compute or validate `Lz`, `Lperp`, `Ltot`, eccentricity, `Zmax`, and related
+  orbit diagnostics when the input data support them;
+- compare those diagnostics against the 24 recovered known-candidate core;
+- keep the 3 omitted known candidates in the validation set, because omission
+  from the Project V GMM component does not invalidate their candidate status.
 
 ## Discussion
 

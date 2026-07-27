@@ -11,8 +11,8 @@
 
 [Program Charter](docs/research_program_charter.md) ·
 [Current Status](docs/current_research_status.md) ·
-[Project V M4 Report](report/project_v_milestone4_gmm_cross_domain_validation.md) ·
-[M4 Notebook](notebooks/28_project_v_gmm_cross_domain_validation.ipynb)
+[Project V Final Synthesis](report/project_v_final_scientific_synthesis.md) ·
+[Final Notebook](notebooks/29_project_v_final_scientific_synthesis.ipynb)
 
 </div>
 
@@ -38,7 +38,7 @@ The present outputs should be read as an exploratory but reproducible research p
 | Project II — Orbital Dynamics | Baseline orbit integration and consistency analysis completed | Angular momentum, baseline `galpy` orbit parameters, and internal dynamical consistency checks | [docs/project_02_orbital_dynamics.md](docs/project_02_orbital_dynamics.md) |
 | Project III — Stellar Population Analysis | Initial classification and priority review completed | Broad population labels and candidate follow-up priority tiers | [docs/project_03_stellar_populations.md](docs/project_03_stellar_populations.md) |
 | Project IV — Chemical Evolution | Metallicity-readiness layer completed | Current [Fe/H]-based chemical triage and follow-up readiness; full abundance tagging remains future work | [docs/project_04_chemical_evolution.md](docs/project_04_chemical_evolution.md) |
-| Project V — Computational Discovery | GMM cross-domain validation completed | PCA, UMAP, DBSCAN, HDBSCAN, OPTICS, GMM comparison, model-dependence tests, and held-out validation coverage audit | [docs/project_05_computational_discovery.md](docs/project_05_computational_discovery.md) |
+| Project V — Computational Discovery | Scientific synthesis completed | PCA, UMAP, DBSCAN, HDBSCAN, OPTICS, GMM comparison, model-dependence tests, cross-domain coverage audit, and final evidence synthesis | [docs/project_05_computational_discovery.md](docs/project_05_computational_discovery.md) |
 | Project VI — Scientific Validation | Validation roadmap and uncertainty inventory completed | Validation priorities, risk inventory, and roadmap for uncertainty propagation and literature comparison | [docs/project_06_scientific_validation.md](docs/project_06_scientific_validation.md) |
 
 ## Current Program Status
@@ -52,6 +52,7 @@ Current scientific focus:
 - Use Project III and Project IV outputs to organize population and metallicity follow-up.
 - Use Project V clustering validation to separate computational recovery from physical interpretation.
 - Use Project V cross-domain validation to distinguish support for the recovered known-candidate core from the still-unvalidated 8 additional GMM members.
+- Use the Project V final synthesis as a follow-up prioritization handoff, not as a physical discovery claim.
 - Use Project VI to plan Monte Carlo uncertainty propagation, potential-model sensitivity tests, and external literature or catalogue comparison.
 
 ## Key Results
@@ -89,6 +90,8 @@ The candidate-enriched GMM component is exactly reproducible under the locked M2
 
 Project V Milestone 4 tested whether the same 32-star component is supported by information not used directly to fit the GMM. The recovered 24 known candidates have complete candidate-level cross-domain coverage and retain supporting orbital/population context. The 8 additional GMM members have no current held-out orbital, population, chemical-readiness, or validation-risk coverage, so the full 32-star component is **not yet cross-domain validated**.
 
+Project V final synthesis closes the computational-discovery phase. The final classification is: **24 recovered candidates = partially supported candidate core; 8 additional members = inconclusive follow-up targets; full 32-star component = model-dependent and not physically validated**.
+
 > **Computational recovery is not equivalent to physical discovery.**
 >
 > Physical interpretation still requires orbital coherence, detailed abundance information, uncertainty propagation, selection-function analysis, and external literature or catalogue comparison.
@@ -99,6 +102,8 @@ Primary GMM validation files:
 - [Project V M3 notebook](notebooks/27_project_v_gmm_stability_sensitivity_validation.ipynb)
 - [Project V M4 report](report/project_v_milestone4_gmm_cross_domain_validation.md)
 - [Project V M4 notebook](notebooks/28_project_v_gmm_cross_domain_validation.ipynb)
+- [Project V final synthesis report](report/project_v_final_scientific_synthesis.md)
+- [Project V final synthesis notebook](notebooks/29_project_v_final_scientific_synthesis.ipynb)
 - [M3 run summary](data/processed/project_v_m3_run_summary.csv)
 - [M3 per-star stability](data/processed/project_v_m3_star_stability.csv)
 - [M3 per-run per-star selections](data/processed/project_v_m3_star_stability_by_experiment.csv)
@@ -106,6 +111,8 @@ Primary GMM validation files:
 - [M3 experiment summary](data/processed/project_v_m3_experiment_summary.csv)
 - [M4 cross-domain membership table](data/processed/project_v_gmm_cross_domain_membership.csv)
 - [M4 cross-domain evidence assessment](data/processed/project_v_gmm_cross_domain_evidence_assessment.csv)
+- [Final key results](data/processed/project_v_final_key_results.csv)
+- [Final evidence matrix](data/processed/project_v_final_evidence_matrix.csv)
 
 ## Main Outputs by Project
 
@@ -115,7 +122,7 @@ Primary GMM validation files:
 | Project II — Orbital Dynamics | [Orbital-family candidates](data/processed/project_ii_orbital_family_candidates.csv), [galpy orbit candidates](data/processed/project_ii_galpy_orbit_candidates.csv), [orbit-AM consistency](data/processed/project_ii_orbit_angular_momentum_consistency.csv), [baseline orbit report](report/project_ii_galpy_baseline_orbit_integration.md) |
 | Project III — Stellar Population Analysis | [Population candidates](data/processed/project_iii_population_candidates.csv), [priority candidates](data/processed/project_iii_population_priority_candidates.csv), [classification report](report/project_iii_initial_population_classification.md), [priority review](report/project_iii_population_classification_review.md) |
 | Project IV — Chemical Evolution | [Metallicity candidates](data/processed/project_iv_metallicity_candidates.csv), [metallicity summary](data/processed/project_iv_metallicity_summary.csv), [chemical-readiness report](report/project_iv_metallicity_structure_and_chemical_readiness.md) |
-| Project V — Computational Discovery | [Cross-method candidate summary](data/processed/project_v_candidate_cross_method_summary.csv), [M2 GMM assignments](data/processed/project_v_m2_cluster_assignments.csv), [M3 run summary](data/processed/project_v_m3_run_summary.csv), [M4 membership](data/processed/project_v_gmm_cross_domain_membership.csv), [M4 report](report/project_v_milestone4_gmm_cross_domain_validation.md) |
+| Project V — Computational Discovery | [Cross-method candidate summary](data/processed/project_v_candidate_cross_method_summary.csv), [M2 GMM assignments](data/processed/project_v_m2_cluster_assignments.csv), [M3 run summary](data/processed/project_v_m3_run_summary.csv), [M4 membership](data/processed/project_v_gmm_cross_domain_membership.csv), [final evidence matrix](data/processed/project_v_final_evidence_matrix.csv), [final synthesis report](report/project_v_final_scientific_synthesis.md) |
 | Project VI — Scientific Validation | [Uncertainty inventory](data/processed/project_vi_uncertainty_inventory.csv), [validation priority candidates](data/processed/project_vi_validation_priority_candidates.csv), [validation report](report/project_vi_validation_uncertainty_inventory.md) |
 
 Additional indexes:
@@ -167,6 +174,7 @@ Current results support the following cautious claims:
 - The Project V M2 GMM candidate-enriched component is exactly reproducible under its locked configuration.
 - The same GMM structure is sensitive to sampling and modelling choices, so it should guide follow-up rather than define a confirmed stellar population.
 - Cross-domain validation currently supports the recovered known-candidate core, while the 8 additional GMM members remain unvalidated follow-up targets because held-out coverage is missing.
+- Project V is complete as a computational-discovery synthesis; physical validation remains open in Project VI.
 - Current chemistry is mostly limited to [Fe/H]; detailed abundance tagging has not yet been completed.
 - Orbit and population interpretations still require uncertainty propagation, potential-model sensitivity, selection-function analysis, and literature comparison.
 

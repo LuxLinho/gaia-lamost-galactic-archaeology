@@ -1205,6 +1205,38 @@ M4 classification:
   because held-out cross-domain coverage is limited.
 - The M2/M3 candidate-enriched GMM component remains a model-dependent follow-up
   prioritization signal, not evidence of a confirmed physical stellar population.
+
+## 2026-07-27 — Project V final scientific synthesis and closeout
+
+Completed the Project V final scientific synthesis after the M2 advanced
+clustering baseline, M3 GMM stability validation, and M4 cross-domain validation.
+No models were refit and no prior M2-M4 scientific outputs were modified.
+
+Outputs added:
+
+- `notebooks/29_project_v_final_scientific_synthesis.ipynb`
+- `data/processed/project_v_final_key_results.csv`
+- `data/processed/project_v_final_evidence_matrix.csv`
+- `figures/project_v_final_evidence_summary.png`
+- `report/project_v_final_scientific_synthesis.md`
+
+Final Project V classification:
+
+- 24 recovered known candidates: partially supported candidate core.
+- 8 additional GMM members: inconclusive follow-up targets only, with 0/8 current
+  held-out Project II/III/IV/VI coverage.
+- 3 omitted known candidates: low selection frequency for the specific GMM
+  component, but retained as valid follow-up candidates because omission from this
+  component is not physical rejection.
+- Full 32-star GMM reference component: exactly reproducible under the locked M2
+  configuration, but model-dependent and not physically validated as a common
+  physical stellar population.
+
+Project V is now closed as a computational-discovery synthesis. Physical
+validation remains open and is handed to Project II and Project VI for orbital
+coverage of the 8 additional members, uncertainty propagation, selection-function
+analysis, detailed abundance validation, external catalogue/literature
+comparison, and common-origin assessment.
 - Used label-independent maximum Jaccard overlap with the 32-star reference set
   to match components across perturbed runs.
 - Ran 30 random-seed tests, 30 independent 80 percent no-replacement subsample
