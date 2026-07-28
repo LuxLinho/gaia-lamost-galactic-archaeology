@@ -1,0 +1,25 @@
+group,metric,group_n,available_n,missing_n,coverage_fraction
+additional_gmm_member,complete 5D astrometry,8,8,0,1.0
+additional_gmm_member,radial velocity,8,8,0,1.0
+additional_gmm_member,usable distance,8,8,0,1.0
+additional_gmm_member,complete 6D phase space,8,8,0,1.0
+additional_gmm_member,angular momentum,8,8,0,1.0
+additional_gmm_member,integrated orbit metrics,8,8,0,1.0
+omitted_known_candidate,complete 5D astrometry,3,3,0,1.0
+omitted_known_candidate,radial velocity,3,3,0,1.0
+omitted_known_candidate,usable distance,3,3,0,1.0
+omitted_known_candidate,complete 6D phase space,3,3,0,1.0
+omitted_known_candidate,angular momentum,3,3,0,1.0
+omitted_known_candidate,integrated orbit metrics,3,3,0,1.0
+parent_comparison,complete 5D astrometry,1803,1803,0,1.0
+parent_comparison,radial velocity,1803,1803,0,1.0
+parent_comparison,usable distance,1803,1803,0,1.0
+parent_comparison,complete 6D phase space,1803,1803,0,1.0
+parent_comparison,angular momentum,1803,1803,0,1.0
+parent_comparison,integrated orbit metrics,1803,0,1803,0.0
+recovered_known_candidate,complete 5D astrometry,24,24,0,1.0
+recovered_known_candidate,radial velocity,24,24,0,1.0
+recovered_known_candidate,usable distance,24,24,0,1.0
+recovered_known_candidate,complete 6D phase space,24,24,0,1.0
+recovered_known_candidate,angular momentum,24,24,0,1.0
+recovered_known_candidate,integrated orbit metrics,24,24,0,1.0

@@ -92,6 +92,11 @@ supported candidate core; the 8 additional GMM members are inconclusive follow-u
 targets only; the full 32-star GMM reference component is model-dependent and not
 physically validated.
 
+Project II has now responded to the Project V handoff with an orbital follow-up
+of the 8 additional GMM members. That follow-up strengthens the orbital
+prioritization case for the additional members, but Project V remains closed and
+does not make a physical-discovery claim.
+
 ## Validation and Uncertainty
 
 Current validation includes:
@@ -112,9 +117,10 @@ Current validation includes:
   common-origin interpretation
 
 Project V is scientifically synthesized and closed as a computational-discovery
-phase. Further validation is handed to Project II and Project VI, including full
-32-star orbital coverage, detailed abundance information, uncertainty
-propagation, selection-function analysis, and external literature comparison.
+phase. Project II has completed the first orbital follow-up for the 8 additional
+members. Further validation remains with Project VI, including detailed abundance
+information, uncertainty propagation, selection-function analysis, external
+literature comparison, and common-origin assessment.
 
 ## Discussion
 

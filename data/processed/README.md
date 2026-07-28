@@ -15,6 +15,27 @@
 - `project_ii_orbit_angular_momentum_consistency.csv` — Candidate-level Project II consistency table comparing angular-momentum interpretation labels with baseline galpy orbit-derived diagnostics.
 - `project_ii_orbit_angular_momentum_consistency_summary.csv` — Summary table of Project II orbit-angular-momentum consistency groups, including counts and median orbit, metallicity, and angular-momentum diagnostics.
 
+- `project_ii_additional_gmm_member_gaia_dr3_query.csv` — Gaia DR3 TAP query
+  result for the 8 Project V additional GMM members, used to supplement
+  astrometric uncertainties, correlations, RUWE, and Gaia radial-velocity errors
+  where available.
+- `project_ii_additional_gmm_member_gaia_dr3_query.sql` — Reproducible ADQL query
+  used for the 8 additional GMM members.
+- `project_ii_additional_gmm_member_input_audit.csv` — Source-level provenance and
+  input-completeness audit for the 8 additional GMM members.
+- `project_ii_additional_gmm_member_orbits.csv` — Star-level orbital diagnostics
+  for the 24 recovered known candidates, 8 additional GMM members, and 3 omitted
+  candidates.
+- `project_ii_additional_gmm_member_group_summary.csv` — Group-level comparison
+  of selection frequency, angular momentum, baseline orbit metrics, and evidence
+  classes.
+- `project_ii_additional_gmm_member_coverage_summary.csv` — Coverage summary by
+  group for 5D astrometry, radial velocity, usable distance, 6D phase space,
+  angular momentum, and integrated orbit metrics.
+- `project_ii_additional_gmm_member_evidence_assessment.csv` — Compact evidence
+  assessment and final Project II classification for the additional-member
+  follow-up.
+
 
 - `project_iii_population_candidates.csv` — Candidate-level Project III initial stellar-population classification table with population labels, population groups, confidence tags, orbit diagnostics, angular-momentum diagnostics, metallicity, and supporting evidence notes.
 - `project_iii_population_summary.csv` — Summary table of Project III initial stellar-population groups, including counts and median metallicity, eccentricity, Zmax, pericenter, apocenter, Lz, and Lperp.

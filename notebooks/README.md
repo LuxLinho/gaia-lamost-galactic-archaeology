@@ -47,6 +47,7 @@ Project V extends the pipeline with feature-space design, PCA, UMAP, DBSCAN, rob
 18_project_ii_galpy_orbit_integration_preparation.ipynb
 19_project_ii_galpy_baseline_orbit_integration.ipynb
 20_project_ii_orbit_angular_momentum_consistency.ipynb
+30_project_ii_additional_gmm_member_orbital_followup.ipynb
 ```
 
 Project II prepares orbit inputs, recovers distance/parallax information, computes angular-momentum diagnostics, assigns orbital-family interpretation labels, and compares those labels with baseline `galpy` orbit integrations.
@@ -112,3 +113,9 @@ Each notebook should include:
   M2-M4 outputs and creates the final scientific synthesis, key-results table,
   evidence matrix, final evidence figure, and closeout report without refitting
   clustering models.
+
+- `30_project_ii_additional_gmm_member_orbital_followup.ipynb` — Performs the
+  Project II response to the Project V handoff by auditing and computing orbital
+  diagnostics for the 8 additional GMM members, including Gaia DR3 uncertainty
+  fields, angular momentum, baseline `galpy` orbit metrics, and a basic
+  Monte Carlo consistency check.

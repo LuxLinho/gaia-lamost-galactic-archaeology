@@ -45,11 +45,12 @@ the current candidate sample. Full Monte Carlo uncertainty propagation,
 selection-function modelling, detailed abundance validation, and external
 catalogue/literature comparison remain future work.
 
-Project VI also now receives the formal Project V final-synthesis handoff. Project
-V closes with a model-dependent 32-star GMM reference component, a partially
-supported 24-star recovered-candidate core, 8 additional GMM members with no
-current held-out coverage, and 3 omitted candidates that should remain in the
-validation set.
+Project VI also receives the formal Project V final-synthesis handoff and the
+Project II additional-member orbital follow-up. Project V closes with a
+model-dependent 32-star GMM reference component and a partially supported
+24-star recovered-candidate core. Project II now provides first-pass orbital
+support for the 8 additional GMM members, while 3 omitted candidates should remain
+in the validation set.
 
 ## Validation and Uncertainty
 
@@ -72,9 +73,10 @@ This project turns the repository from exploratory computational analysis into a
 
 Project V should be treated as a follow-up prioritization input to Project VI,
 not as a physical discovery claim. Project VI is responsible for testing whether
-the Project V recovered-candidate core, additional GMM members, omitted
-candidates, or any smaller subset survive uncertainty propagation, selection
-effects, detailed chemical validation, and external literature comparison.
+the Project V recovered-candidate core, Project II-supported additional GMM
+members, omitted candidates, or any smaller subset survive full uncertainty
+propagation, selection effects, detailed chemical validation, and external
+literature comparison.
 
 ## Deliverables
 

@@ -72,6 +72,17 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_ii_orbit_zmax_vs_lperp.png` — Project II consistency diagnostic comparing galpy Zmax with Lperp angular momentum.
 - `project_ii_orbit_family_consistency.png` — Project II consistency-count diagnostic for angular-momentum labels versus orbit-integrated behavior.
 
+- `project_ii_additional_gmm_member_angular_momentum.png` — Project II follow-up
+  angular-momentum comparison for the 8 Project V additional GMM members against
+  the recovered known-candidate core, omitted candidates, and parent comparison
+  stars.
+- `project_ii_additional_gmm_member_orbit_comparison.png` — Baseline `galpy`
+  orbit-metric and rotation-class comparison for recovered, additional, and
+  omitted groups.
+- `project_ii_additional_gmm_member_uncertainty_summary.png` — Basic Monte Carlo
+  angular-momentum uncertainty and consistency-frequency summary for the 8
+  additional GMM members.
+
 
 - `project_iii_population_counts.png` — Project III initial population-group count diagnostic figure.
 - `project_iii_population_feh_eccentricity.png` — Project III metallicity versus galpy eccentricity diagnostic figure by initial population group.

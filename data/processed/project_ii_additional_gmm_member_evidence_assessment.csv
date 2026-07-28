@@ -1,0 +1,8 @@
+question,result,interpretation
+8 additional members with complete 6D data,8 / 8,Internal parent-sample 6D inputs are available.
+8 additional members with angular momentum,8 / 8,Angular momentum uses Project II convention and existing Galactocentric velocities.
+8 additional members with reliable integrated orbit metrics,8 / 8,Baseline galpy metrics are available where 6D inputs support integration.
+additional-member classifications,"{""orbitally consistent"": 8}",Based on recovered-core angular-momentum distance and MC consistency probability.
+selection frequency and consistency relation,"{""orbitally consistent"": 0.23170731707317072}",Exploratory only; n=8 and p-values are not emphasized.
+full 32-star component classification,strengthened partial support,"Orbital agreement can strengthen follow-up priority, but does not establish a common physical origin."
+evidence independence boundary,partially held-out orbital diagnostics,"Angular-momentum and orbit diagnostics were not direct GMM features, but inherit velocity information used by the model."

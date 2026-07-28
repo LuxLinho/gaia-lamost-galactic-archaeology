@@ -49,6 +49,7 @@ Relevant existing work includes:
 - `notebooks/18_project_ii_galpy_orbit_integration_preparation.ipynb`
 - `notebooks/19_project_ii_galpy_baseline_orbit_integration.ipynb`
 - `notebooks/20_project_ii_orbit_angular_momentum_consistency.ipynb`
+- `notebooks/30_project_ii_additional_gmm_member_orbital_followup.ipynb`
 - `data/processed/project_ii_orbit_input_candidates.csv`
 - `data/processed/project_ii_orbital_diagnostics_candidates.csv`
 - `data/processed/project_ii_distance_recovered_candidates.csv`
@@ -57,6 +58,9 @@ Relevant existing work includes:
 - `data/processed/project_ii_orbital_family_candidates.csv`
 - `data/processed/project_ii_galpy_orbit_candidates.csv`
 - `data/processed/project_ii_orbit_angular_momentum_consistency.csv`
+- `data/processed/project_ii_additional_gmm_member_orbits.csv`
+- `data/processed/project_ii_additional_gmm_member_input_audit.csv`
+- `data/processed/project_ii_additional_gmm_member_evidence_assessment.csv`
 - `figures/project_ii_angular_momentum_lz_lperp.png`
 - `figures/project_ii_angular_momentum_lz_ltot.png`
 - `figures/project_ii_angular_momentum_feh_lz.png`
@@ -64,6 +68,7 @@ Relevant existing work includes:
 - `report/project_ii_milestone2_orbit_input_preparation.md`
 - `report/project_ii_galpy_baseline_orbit_integration.md`
 - `report/project_ii_orbit_angular_momentum_consistency.md`
+- `report/project_ii_additional_gmm_member_orbital_followup.md`
 
 ## Results
 
@@ -72,6 +77,13 @@ diagnostics, orbital-family interpretation labels, baseline `galpy` orbit
 integration, and orbit-angular-momentum consistency checks for the known
 candidate sample. These diagnostics provide a first view of prograde, retrograde,
 radial, and high-Lperp orbital behavior.
+
+Project II has also completed the first orbital follow-up of the 8 additional
+members of the Project V GMM reference component. All 8 have usable internal
+6D inputs, angular-momentum diagnostics, and baseline `galpy` orbit metrics. Under
+the recovered-core angular-momentum distance rule, all 8 are classified as
+orbitally consistent, strengthening their follow-up priority without establishing
+common physical origin.
 
 ## Validation and Uncertainty
 
@@ -86,9 +98,9 @@ These limitations will be addressed more fully in Project VI.
 
 ## Project V Handoff
 
-Project V final synthesis identifies 8 additional GMM members that share the
-locked Project V 32-star reference component but currently have no held-out
-Project II orbital coverage. Project II should treat these stars as follow-up
+Project V final synthesis identified 8 additional GMM members that share the
+locked Project V 32-star reference component. Project II has now completed a
+first orbital follow-up for those 8 stars and should still treat them as follow-up
 targets only, not confirmed physical members.
 
 Recommended next work:

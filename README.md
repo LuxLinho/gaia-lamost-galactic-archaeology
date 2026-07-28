@@ -35,7 +35,7 @@ The present outputs should be read as an exploratory but reproducible research p
 | Project | Current Status | Current Role | Primary Index |
 |---|---|---|---|
 | Project I — Data Foundation | Initial version completed | Gaia-LAMOST sample construction, quality control, feature engineering, and candidate catalogue foundation | [docs/project_01_data_foundation.md](docs/project_01_data_foundation.md) |
-| Project II — Orbital Dynamics | Baseline orbit integration and consistency analysis completed | Angular momentum, baseline `galpy` orbit parameters, and internal dynamical consistency checks | [docs/project_02_orbital_dynamics.md](docs/project_02_orbital_dynamics.md) |
+| Project II — Orbital Dynamics | Additional GMM member orbital follow-up completed | Angular momentum, baseline `galpy` orbit parameters, internal dynamical consistency checks, and Project V handoff response | [docs/project_02_orbital_dynamics.md](docs/project_02_orbital_dynamics.md) |
 | Project III — Stellar Population Analysis | Initial classification and priority review completed | Broad population labels and candidate follow-up priority tiers | [docs/project_03_stellar_populations.md](docs/project_03_stellar_populations.md) |
 | Project IV — Chemical Evolution | Metallicity-readiness layer completed | Current [Fe/H]-based chemical triage and follow-up readiness; full abundance tagging remains future work | [docs/project_04_chemical_evolution.md](docs/project_04_chemical_evolution.md) |
 | Project V — Computational Discovery | Scientific synthesis completed | PCA, UMAP, DBSCAN, HDBSCAN, OPTICS, GMM comparison, model-dependence tests, cross-domain coverage audit, and final evidence synthesis | [docs/project_05_computational_discovery.md](docs/project_05_computational_discovery.md) |
@@ -49,6 +49,7 @@ Current scientific focus:
 
 - Preserve the 27-star candidate sample as the main follow-up target set.
 - Use Project II orbit and angular-momentum diagnostics to prioritize dynamically unusual stars.
+- Use the Project II additional-member follow-up to test the 8 Project V GMM additions before Project VI physical validation.
 - Use Project III and Project IV outputs to organize population and metallicity follow-up.
 - Use Project V clustering validation to separate computational recovery from physical interpretation.
 - Use Project V cross-domain validation to distinguish support for the recovered known-candidate core from the still-unvalidated 8 additional GMM members.
@@ -76,6 +77,8 @@ Current scientific focus:
 | M4 cross-domain coverage: recovered known candidates | 24 / 24 | Project II/III/IV/VI candidate-level validation coverage |
 | M4 cross-domain coverage: additional GMM members | 0 / 8 | No current candidate-level held-out orbital, population, chemical-readiness, or validation-risk coverage |
 | M4 orbit-AM consistency: recovered known candidates | 21 / 24 consistent | Supports the known-candidate core, not the full 32-star component |
+| Project II follow-up: additional GMM members with 6D inputs | 8 / 8 | Internal parent-sample fields plus Gaia DR3 uncertainty query |
+| Project II follow-up: additional GMM members with angular momentum and baseline orbit metrics | 8 / 8 | All eight classified as orbitally consistent under the recovered-core angular-momentum rule |
 
 ## Project V GMM Validation Conclusion
 
@@ -91,6 +94,8 @@ The candidate-enriched GMM component is exactly reproducible under the locked M2
 Project V Milestone 4 tested whether the same 32-star component is supported by information not used directly to fit the GMM. The recovered 24 known candidates have complete candidate-level cross-domain coverage and retain supporting orbital/population context. The 8 additional GMM members have no current held-out orbital, population, chemical-readiness, or validation-risk coverage, so the full 32-star component is **not yet cross-domain validated**.
 
 Project V final synthesis closes the computational-discovery phase. The final classification is: **24 recovered candidates = partially supported candidate core; 8 additional members = inconclusive follow-up targets; full 32-star component = model-dependent and not physically validated**.
+
+Project II subsequently completed the first orbital follow-up for the 8 additional GMM members. All eight have usable 6D inputs, angular-momentum diagnostics, and baseline `galpy` orbit metrics, strengthening their follow-up priority. This updates the orbital support status, but it does not change the physical-discovery boundary: common physical origin remains unestablished and belongs to Project VI validation.
 
 > **Computational recovery is not equivalent to physical discovery.**
 >
@@ -119,7 +124,7 @@ Primary GMM validation files:
 | Project | Representative Outputs |
 |---|---|
 | Project I — Data Foundation | [Candidate diagnostics](data/processed/gaia_lamost_candidate_diagnostic_table.csv), [larger chemo-kinematic features](data/processed/gaia_lamost_larger_chemo_kinematic_features.csv), [candidate summary](data/processed/gaia_lamost_candidate_summary_table.csv) |
-| Project II — Orbital Dynamics | [Orbital-family candidates](data/processed/project_ii_orbital_family_candidates.csv), [galpy orbit candidates](data/processed/project_ii_galpy_orbit_candidates.csv), [orbit-AM consistency](data/processed/project_ii_orbit_angular_momentum_consistency.csv), [baseline orbit report](report/project_ii_galpy_baseline_orbit_integration.md) |
+| Project II — Orbital Dynamics | [Orbital-family candidates](data/processed/project_ii_orbital_family_candidates.csv), [galpy orbit candidates](data/processed/project_ii_galpy_orbit_candidates.csv), [orbit-AM consistency](data/processed/project_ii_orbit_angular_momentum_consistency.csv), [additional GMM member orbits](data/processed/project_ii_additional_gmm_member_orbits.csv), [additional-member follow-up report](report/project_ii_additional_gmm_member_orbital_followup.md) |
 | Project III — Stellar Population Analysis | [Population candidates](data/processed/project_iii_population_candidates.csv), [priority candidates](data/processed/project_iii_population_priority_candidates.csv), [classification report](report/project_iii_initial_population_classification.md), [priority review](report/project_iii_population_classification_review.md) |
 | Project IV — Chemical Evolution | [Metallicity candidates](data/processed/project_iv_metallicity_candidates.csv), [metallicity summary](data/processed/project_iv_metallicity_summary.csv), [chemical-readiness report](report/project_iv_metallicity_structure_and_chemical_readiness.md) |
 | Project V — Computational Discovery | [Cross-method candidate summary](data/processed/project_v_candidate_cross_method_summary.csv), [M2 GMM assignments](data/processed/project_v_m2_cluster_assignments.csv), [M3 run summary](data/processed/project_v_m3_run_summary.csv), [M4 membership](data/processed/project_v_gmm_cross_domain_membership.csv), [final evidence matrix](data/processed/project_v_final_evidence_matrix.csv), [final synthesis report](report/project_v_final_scientific_synthesis.md) |

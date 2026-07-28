@@ -1237,6 +1237,42 @@ validation remains open and is handed to Project II and Project VI for orbital
 coverage of the 8 additional members, uncertainty propagation, selection-function
 analysis, detailed abundance validation, external catalogue/literature
 comparison, and common-origin assessment.
+
+## 2026-07-28 — Project II additional GMM member orbital follow-up
+
+Completed the Project II response to the Project V handoff for the 8 additional
+members of the Project V 32-star GMM reference component.
+
+Outputs added:
+
+- `notebooks/30_project_ii_additional_gmm_member_orbital_followup.ipynb`
+- `data/processed/project_ii_additional_gmm_member_gaia_dr3_query.csv`
+- `data/processed/project_ii_additional_gmm_member_gaia_dr3_query.sql`
+- `data/processed/project_ii_additional_gmm_member_input_audit.csv`
+- `data/processed/project_ii_additional_gmm_member_orbits.csv`
+- `data/processed/project_ii_additional_gmm_member_group_summary.csv`
+- `data/processed/project_ii_additional_gmm_member_coverage_summary.csv`
+- `data/processed/project_ii_additional_gmm_member_evidence_assessment.csv`
+- `figures/project_ii_additional_gmm_member_angular_momentum.png`
+- `figures/project_ii_additional_gmm_member_orbit_comparison.png`
+- `figures/project_ii_additional_gmm_member_uncertainty_summary.png`
+- `report/project_ii_additional_gmm_member_orbital_followup.md`
+
+Key result:
+
+- The 8 additional GMM members all have complete 5D astrometry, LAMOST radial
+  velocities, usable inverse-parallax distances, 6D phase-space inputs, angular
+  momentum diagnostics, and baseline `galpy` orbit metrics.
+- Gaia DR3 was queried only for the 8 exact `source_id` values to supplement
+  astrometric uncertainties, correlations, RUWE, and Gaia radial-velocity errors
+  where available.
+- Under the recovered-core angular-momentum distance rule, all 8 additional
+  members are classified as orbitally consistent, strengthening their follow-up
+  priority.
+- This is not evidence of common physical origin: angular-momentum and orbit
+  diagnostics are partially held out from the GMM, not fully independent, and
+  Project VI still needs full uncertainty propagation, selection-function
+  analysis, abundance validation, and external catalogue/literature comparison.
 - Used label-independent maximum Jaccard overlap with the 32-star reference set
   to match components across perturbed runs.
 - Ran 30 random-seed tests, 30 independent 80 percent no-replacement subsample
