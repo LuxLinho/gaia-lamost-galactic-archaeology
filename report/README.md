@@ -96,7 +96,7 @@ Project V should be read as an exploratory but reproducible machine-learning ext
 - `project_iv_metallicity_structure_and_chemical_readiness.md` — Documents Project IV metallicity structure and chemical-readiness analysis based on available [Fe/H] information.
 
 
-- `project_vi_validation_uncertainty_inventory.md` — Documents the Project VI validation roadmap, uncertainty inventory, and candidate-level validation priorities.
+- `project_vi_validation_uncertainty_inventory.md` — Documents the Project VI validation roadmap, uncertainty inventory, candidate-level validation priorities, and small-scale Monte Carlo prototype readiness audit.
 
 ## Project V reports
 

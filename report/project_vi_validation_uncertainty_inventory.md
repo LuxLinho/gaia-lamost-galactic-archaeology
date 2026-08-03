@@ -124,3 +124,179 @@ This step produces:
 ## Next Steps
 
 The next Project VI step should be a small-scale Monte Carlo prototype on a limited number of high-priority candidates before scaling to the full sample.
+
+## Small-Scale Monte Carlo Prototype Readiness Audit
+
+This audit records the first Project VI prototype-design pass after the
+additional GMM member orbital follow-up. It is intentionally limited to the
+current processed data products and does not yet generate a full-sample
+uncertainty catalogue.
+
+### Repository state at audit time
+
+The working tree was clean at the start of this audit. The latest commit was:
+
+- `8a4f44b Add additional GMM member orbital follow-up`
+
+Recent preceding commits included:
+
+- `4e4c05b Complete Project V scientific synthesis`
+- `826a945 Add Project V cross-domain validation`
+
+### Priority-A prototype targets
+
+The current Project VI table contains exactly two
+`validation_priority_A` candidates. These are the preferred first prototype
+targets because they are also Project III `priority_A` objects and have strong
+orbit/population follow-up value.
+
+| source_id | project_vi_validation_priority | project_iii_priority_tier | project_iii_priority_score | project_iii_population_group | feh | galpy_eccentricity | galpy_zmax_kpc | Lz_kpc_kms | Lperp_kpc_kms |
+|:--|:--|:--|--:|:--|--:|--:|--:|--:|--:|
+| 3089847099636770560 | validation_priority_A | priority_A | 21 | retrograde_halo | -2.213 | 0.708753 | 52.847640 | -961.146324 | 3531.457514 |
+| 3089534353001157632 | validation_priority_A | priority_A | 19 | radial_halo_or_gse_like | -1.539 | 0.836985 | 17.784401 | 471.072356 | 1303.901865 |
+
+Project III contains four additional `priority_A` candidates that are
+currently Project VI `validation_priority_B`; those should be treated as
+second-wave prototype targets after the two Project VI `validation_priority_A`
+objects are tested.
+
+### Available phase-space inputs
+
+For the two Project VI `validation_priority_A` candidates, the larger recovered
+Gaia-LAMOST processed tables provide central astrometric and radial-velocity
+values:
+
+| source_id | parallax_mas | parallax_over_error | derived_parallax_error_mas | pmra_masyr | pmdec_masyr | distance_pc | rv_kms |
+|:--|--:|--:|--:|--:|--:|--:|--:|
+| 3089847099636770560 | 0.637151 | 26.753075 | 0.023816 | -42.072760 | -36.356421 | 1569.487021 | -11.29 |
+| 3089534353001157632 | 0.458766 | 25.166069 | 0.018229 | 2.906364 | -36.283028 | 2179.762224 | -43.26 |
+
+The `distance_quality_flag` in the current Project VI inventory is
+`missing_parallax`, inherited from earlier candidate-table readiness logic.
+For these two candidates, this flag should be interpreted carefully: the
+larger recovered Gaia-LAMOST table does contain parallax central values and an
+inverse-parallax distance central value, but the Project VI candidate products
+do not yet carry full Gaia astrometric uncertainty and covariance information.
+
+### Uncertainty and covariance inventory
+
+Measured or measured-derived quantities currently available for the two
+prototype targets:
+
+- Parallax central value.
+- `parallax_over_error`.
+- Parallax uncertainty derived as `parallax / parallax_over_error`.
+- Proper-motion central values, `pmra` and `pmdec`.
+- LAMOST radial-velocity central value, `rv`.
+- Inverse-parallax distance central value, `distance_pc`.
+
+Missing uncertainty quantities for the two prototype targets:
+
+- `pmra_error`.
+- `pmdec_error`.
+- LAMOST `rv_err`.
+- Gaia `radial_velocity_error`.
+- Explicit distance uncertainty.
+- RA/Dec uncertainties.
+
+Missing covariance or correlation quantities for the two prototype targets:
+
+- `ra_dec_corr`.
+- `ra_parallax_corr`.
+- `ra_pmra_corr`.
+- `ra_pmdec_corr`.
+- `dec_parallax_corr`.
+- `dec_pmra_corr`.
+- `dec_pmdec_corr`.
+- `parallax_pmra_corr`.
+- `parallax_pmdec_corr`.
+- `pmra_pmdec_corr`.
+
+The repository does contain Gaia DR3 uncertainty and correlation columns in
+`data/processed/project_ii_additional_gmm_member_gaia_dr3_query.csv`, but that
+file covers the eight additional GMM members from the Project II follow-up. It
+does not cover the two Project VI `validation_priority_A` candidates.
+
+### Existing reusable orbit-calculation chain
+
+The angular-momentum calculation is reusable from
+`notebooks/16_project_ii_angular_momentum_diagnostics.ipynb`:
+
+```text
+Astropy SkyCoord -> Galactocentric position and velocity
+Lx = y * vz - z * vy
+Ly = z * vx - x * vz
+Lz = x * vy - y * vx
+Lperp = sqrt(Lx^2 + Ly^2)
+Ltot = sqrt(Lx^2 + Ly^2 + Lz^2)
+```
+
+The baseline orbit-integration calculation is reusable from the Project II
+galpy workflow:
+
+```text
+galpy Orbit(..., radec=True, ro=8.2, vo=232.0, solarmotion='schoenrich')
+Potential: MWPotential2014
+Integration time: 5 Gyr
+Steps: 1001
+Outputs: eccentricity, rperi, rap, Zmax, energy
+```
+
+The additional-GMM-member notebook
+`notebooks/30_project_ii_additional_gmm_member_orbital_followup.ipynb` contains
+a limited Monte Carlo pattern for angular-momentum uncertainty propagation
+using Gaia parallax/proper-motion covariance. That pattern is reusable, but the
+Project VI prototype must adapt it because the two Project VI `priority_A`
+targets currently lack proper-motion errors and covariance columns.
+
+### Minimum viable Monte Carlo prototype design
+
+The first executable prototype should be limited to the two Project VI
+`validation_priority_A` candidates and approximately 200 draws per candidate.
+It should not expand to the full 27-candidate sample or to 1000 draws yet.
+
+Recommended first mode:
+
+- Name: `measured_parallax_only`.
+- Draw parallax from a Gaussian centered on the measured parallax.
+- Use `parallax / parallax_over_error` as the measured-derived parallax sigma.
+- Reject non-positive parallax draws.
+- Recompute distance for each accepted draw as inverse parallax.
+- Hold RA, Dec, proper motions, and radial velocity fixed.
+- Recompute `Lz`, `Lperp`, `Ltot`, eccentricity, `rperi`, `rap`, and `Zmax`.
+
+Optional sensitivity mode:
+
+- Name: `assumption_sensitivity`.
+- Use clearly labeled assumed scales for missing proper-motion or
+  radial-velocity uncertainties only if needed for stress testing.
+- Store those columns as assumed uncertainties, never as measured
+  observational errors.
+- Keep the measured-only mode as the primary scientific result.
+
+Required output fields:
+
+- Candidate identifier and Project VI/Project III priority labels.
+- Input central values.
+- Uncertainty provenance for each sampled dimension:
+  `measured_uncertainty`, `missing_uncertainty`, or `assumed_uncertainty`.
+- Number of requested draws.
+- Number and fraction of successful draws.
+- Median, p16, and p84 for `Lz`, `Lperp`, `Ltot`, eccentricity, `rperi`,
+  `rap`, and `Zmax`.
+- A note explicitly stating which uncertainties were missing and whether any
+  assumed scales were used.
+
+Proposed prototype deliverables:
+
+- `notebooks/31_project_vi_small_scale_mc_uncertainty_propagation.ipynb`
+- `data/processed/project_vi_mc_prototype_candidate_uncertainties.csv`
+- `data/processed/project_vi_mc_prototype_draw_summary.csv`
+- `figures/project_vi_mc_prototype_lz_lperp_uncertainty.png`
+- `figures/project_vi_mc_prototype_orbit_uncertainty.png`
+- `report/project_vi_small_scale_mc_uncertainty_prototype.md`
+
+The report must not present missing proper-motion, radial-velocity, distance,
+or covariance uncertainties as real observed uncertainties. Any assumed values
+must remain explicitly labeled as assumptions and separated from measured or
+measured-derived uncertainty propagation.

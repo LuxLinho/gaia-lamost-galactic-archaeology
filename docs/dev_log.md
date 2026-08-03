@@ -1,5 +1,30 @@
 # Development Log
 
+## 2026-08-03
+
+### Project VI Monte Carlo Prototype Readiness Audit
+
+Documented the small-scale Monte Carlo uncertainty-propagation prototype design
+in `report/project_vi_validation_uncertainty_inventory.md`.
+
+The audit records:
+
+- the current repository version state;
+- the two Project VI `validation_priority_A` prototype targets;
+- available parallax, `parallax_over_error`, proper-motion, radial-velocity,
+  and inverse-parallax distance central values;
+- derived parallax uncertainty from `parallax / parallax_over_error`;
+- missing proper-motion, radial-velocity, distance, and covariance uncertainty
+  inputs;
+- reusable Project II angular-momentum and `galpy` orbit-calculation chains;
+- the first `measured_parallax_only` Monte Carlo prototype design.
+
+The audit also clarifies the `distance_quality_flag` semantics: the current
+Project VI tables may label the two A-priority targets as `missing_parallax`,
+but the larger recovered Gaia-LAMOST tables contain parallax central values.
+The current limitation is missing full uncertainty/covariance propagation
+inputs, not complete absence of parallax central values.
+
 ## 2026-06-05
 
 ### Project Initialization
