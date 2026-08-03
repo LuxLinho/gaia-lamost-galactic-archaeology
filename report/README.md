@@ -97,6 +97,11 @@ Project V should be read as an exploratory but reproducible machine-learning ext
 
 
 - `project_vi_validation_uncertainty_inventory.md` — Documents the Project VI validation roadmap, uncertainty inventory, candidate-level validation priorities, and small-scale Monte Carlo prototype readiness audit.
+- `project_vi_small_scale_mc_uncertainty_prototype.md` — Documents the first
+  Project VI small-scale Monte Carlo prototype for the two
+  `validation_priority_A` candidates, using measured-derived parallax
+  uncertainty only and explicitly marking missing proper-motion,
+  radial-velocity, distance, and covariance uncertainty inputs.
 
 ## Project V reports
 

@@ -120,3 +120,10 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_v_final_evidence_summary.png` — Project V final synthesis figure with
   separate panels for baseline recovery, Jaccard stability, group selection
   frequencies, and held-out cross-domain coverage.
+
+- `project_vi_mc_prototype_lz_lperp_uncertainty.png` — Project VI small-scale
+  Monte Carlo prototype Lz-Lperp diagnostic for the two `validation_priority_A`
+  targets under parallax-only uncertainty propagation.
+- `project_vi_mc_prototype_orbit_uncertainty.png` — Project VI small-scale
+  Monte Carlo prototype boxplot summary for eccentricity, pericenter,
+  apocenter, and Zmax under parallax-only uncertainty propagation.

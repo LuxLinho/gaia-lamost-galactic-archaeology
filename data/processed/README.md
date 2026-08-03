@@ -51,6 +51,14 @@
 
 - `project_vi_uncertainty_inventory.csv` — Candidate-level Project VI uncertainty inventory, tracking validation risk, validation priority, population evidence, chemical readiness, orbit diagnostics, and distance provenance.
 - `project_vi_validation_priority_candidates.csv` — Project VI validation-priority table ranking candidates for later Monte Carlo uncertainty propagation and literature comparison.
+- `project_vi_mc_prototype_candidate_uncertainties.csv` — Candidate-level
+  Project VI small-scale Monte Carlo prototype summary for the two
+  `validation_priority_A` targets, including measured-derived parallax
+  uncertainty provenance, missing uncertainty flags, and median/p16/p84 orbit
+  quantities.
+- `project_vi_mc_prototype_draw_summary.csv` — Per-draw Project VI Monte Carlo
+  prototype table for 200 parallax-only draws per priority-A target, with
+  fixed proper motion and radial velocity.
 
 - `project_v_advanced_clustering_feature_audit.csv` — Feature-level completeness, distribution, scaling, and clustering-role audit for the Project V core and extended feature spaces.
 - `project_v_core_feature_correlations.csv` — Pearson correlation matrix for the five Project V core clustering features.

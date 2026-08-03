@@ -25,6 +25,31 @@ but the larger recovered Gaia-LAMOST tables contain parallax central values.
 The current limitation is missing full uncertainty/covariance propagation
 inputs, not complete absence of parallax central values.
 
+### Project VI Small-Scale Monte Carlo Prototype
+
+Implemented the first executable Project VI Monte Carlo uncertainty-propagation
+prototype in `notebooks/31_project_vi_small_scale_mc_uncertainty_propagation.ipynb`.
+
+The prototype is intentionally limited to the two Project VI
+`validation_priority_A` candidates:
+
+- `3089847099636770560`
+- `3089534353001157632`
+
+The enabled mode is `measured_only_parallax`. It runs 200 draws per candidate,
+samples only parallax using `parallax / parallax_over_error`, recomputes
+distance from each sampled parallax, and holds RA, Dec, proper motion, and
+radial velocity fixed. No proper-motion, radial-velocity, distance, or
+covariance uncertainty is invented.
+
+Generated outputs:
+
+- `data/processed/project_vi_mc_prototype_candidate_uncertainties.csv`
+- `data/processed/project_vi_mc_prototype_draw_summary.csv`
+- `figures/project_vi_mc_prototype_lz_lperp_uncertainty.png`
+- `figures/project_vi_mc_prototype_orbit_uncertainty.png`
+- `report/project_vi_small_scale_mc_uncertainty_prototype.md`
+
 ## 2026-06-05
 
 ### Project Initialization

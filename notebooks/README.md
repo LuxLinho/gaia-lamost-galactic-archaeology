@@ -119,3 +119,8 @@ Each notebook should include:
   diagnostics for the 8 additional GMM members, including Gaia DR3 uncertainty
   fields, angular momentum, baseline `galpy` orbit metrics, and a basic
   Monte Carlo consistency check.
+
+- `31_project_vi_small_scale_mc_uncertainty_propagation.ipynb` — Runs the first
+  Project VI small-scale Monte Carlo prototype for the two
+  `validation_priority_A` candidates, propagating measured-derived parallax
+  uncertainty only while holding proper motion and radial velocity fixed.
