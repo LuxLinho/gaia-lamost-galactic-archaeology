@@ -59,6 +59,13 @@
 - `project_vi_mc_prototype_draw_summary.csv` — Per-draw Project VI Monte Carlo
   prototype table for 200 parallax-only draws per priority-A target, with
   fixed proper motion and radial velocity.
+- `project_vi_priority_a_covariance_inputs.csv` — Covariance-ready Project VI
+  input table for the two `validation_priority_A` targets, containing Gaia DR3
+  astrometric central values, standard uncertainties, correlation coefficients,
+  quality fields, RV provenance, and covariance-matrix checks.
+- `project_vi_priority_a_field_inventory.csv` — Field-level Project VI audit
+  recording source table, availability, value, unit, provenance, missingness,
+  and intended MC role for requested Gaia and LAMOST uncertainty inputs.
 
 - `project_v_advanced_clustering_feature_audit.csv` — Feature-level completeness, distribution, scaling, and clustering-role audit for the Project V core and extended feature spaces.
 - `project_v_core_feature_correlations.csv` — Pearson correlation matrix for the five Project V core clustering features.

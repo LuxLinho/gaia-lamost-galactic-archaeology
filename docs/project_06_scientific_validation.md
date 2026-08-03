@@ -52,6 +52,12 @@ model-dependent 32-star GMM reference component and a partially supported
 support for the 8 additional GMM members, while 3 omitted candidates should remain
 in the validation set.
 
+Project VI now includes a Priority-A covariance-retrieval stage for the two
+highest-priority validation candidates. This stage retrieves Gaia DR3
+astrometric standard uncertainties and correlation coefficients, builds a
+parallax/pmra/pmdec covariance-ready input table, and verifies covariance-matrix
+properties before any correlated Monte Carlo sampling is attempted.
+
 ## Validation and Uncertainty
 
 This project is itself the validation layer. It will focus on:

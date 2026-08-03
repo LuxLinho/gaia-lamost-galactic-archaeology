@@ -50,6 +50,25 @@ Generated outputs:
 - `figures/project_vi_mc_prototype_orbit_uncertainty.png`
 - `report/project_vi_small_scale_mc_uncertainty_prototype.md`
 
+### Project VI Priority-A Covariance Retrieval
+
+Retrieved Gaia DR3 astrometric uncertainties and correlation coefficients for
+the two Project VI `validation_priority_A` candidates using a reproducible Gaia
+TAP query in `notebooks/32_project_vi_priority_a_covariance_retrieval.ipynb`.
+
+The stage generated:
+
+- `data/raw/project_vi_priority_a_gaia_dr3_astrometry.csv`
+- `data/processed/project_vi_priority_a_covariance_inputs.csv`
+- `data/processed/project_vi_priority_a_field_inventory.csv`
+- `report/project_vi_priority_a_covariance_retrieval.md`
+
+Both candidates are covariance-ready for a later parallax/pmra/pmdec correlated
+astrometric Monte Carlo. Neither candidate has a measured RV uncertainty that is
+ready to use with the current Project II convention of LAMOST RV central values.
+No correlated Monte Carlo sampling or new classification robustness conclusion
+was produced in this retrieval stage.
+
 ## 2026-06-05
 
 ### Project Initialization

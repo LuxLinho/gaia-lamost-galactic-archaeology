@@ -124,3 +124,8 @@ Each notebook should include:
   Project VI small-scale Monte Carlo prototype for the two
   `validation_priority_A` candidates, propagating measured-derived parallax
   uncertainty only while holding proper motion and radial velocity fixed.
+
+- `32_project_vi_priority_a_covariance_retrieval.ipynb` — Retrieves Gaia DR3
+  astrometric uncertainties and correlation coefficients for the two Project VI
+  `validation_priority_A` candidates, builds covariance-ready inputs, and checks
+  the parallax/pmra/pmdec covariance matrices without running Monte Carlo draws.

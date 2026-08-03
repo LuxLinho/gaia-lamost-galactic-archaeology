@@ -102,6 +102,10 @@ Project V should be read as an exploratory but reproducible machine-learning ext
   `validation_priority_A` candidates, using measured-derived parallax
   uncertainty only and explicitly marking missing proper-motion,
   radial-velocity, distance, and covariance uncertainty inputs.
+- `project_vi_priority_a_covariance_retrieval.md` — Documents Gaia DR3
+  astrometric uncertainty and correlation retrieval for the two Project VI
+  `validation_priority_A` candidates, including RV provenance, covariance
+  matrix checks, and readiness for later correlated astrometric Monte Carlo.
 
 ## Project V reports
 

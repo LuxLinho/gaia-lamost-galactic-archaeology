@@ -22,6 +22,15 @@ LAMOST DR9 provides spectroscopic information, including stellar parameters, rad
 
 Large raw data files are not intended to be committed directly unless they are small sample files used for demonstration.
 
+Project VI adds a small Gaia DR3 TAP retrieval for the two
+`validation_priority_A` candidates:
+
+- `raw/project_vi_priority_a_gaia_dr3_astrometry.csv`
+
+This raw query result is intentionally limited to two source IDs and preserves
+Gaia DR3 astrometric uncertainty, correlation, radial-velocity, and quality
+fields for later covariance-aware validation.
+
 Processed data products should be documented with:
 
 - source catalogue
