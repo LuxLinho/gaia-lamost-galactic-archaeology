@@ -58,6 +58,11 @@ astrometric standard uncertainties and correlation coefficients, builds a
 parallax/pmra/pmdec covariance-ready input table, and verifies covariance-matrix
 properties before any correlated Monte Carlo sampling is attempted.
 
+The first correlated astrometric Monte Carlo stage is limited to those same two
+Priority-A candidates. It jointly propagates Gaia parallax, pmra, and pmdec
+uncertainties while keeping RA, Dec, and LAMOST radial velocity fixed, and
+compares the result with the earlier parallax-only prototype.
+
 ## Validation and Uncertainty
 
 This project is itself the validation layer. It will focus on:

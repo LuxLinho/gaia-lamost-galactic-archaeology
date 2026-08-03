@@ -127,3 +127,12 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_vi_mc_prototype_orbit_uncertainty.png` — Project VI small-scale
   Monte Carlo prototype boxplot summary for eccentricity, pericenter,
   apocenter, and Zmax under parallax-only uncertainty propagation.
+- `project_vi_correlated_mc_lz_lperp.png` — Project VI Priority-A correlated
+  astrometric Monte Carlo Lz-Lperp diagnostic with Gaia parallax, pmra, and
+  pmdec jointly sampled and LAMOST radial velocity fixed.
+- `project_vi_correlated_mc_orbit_uncertainty.png` — Project VI Priority-A
+  correlated astrometric Monte Carlo boxplot summary for eccentricity,
+  pericenter, apocenter, and Zmax.
+- `project_vi_mc_mode_comparison.png` — Project VI comparison of uncertainty
+  interval widths between the parallax-only prototype and the correlated
+  astrometric, RV-fixed mode.

@@ -106,6 +106,9 @@ Project V should be read as an exploratory but reproducible machine-learning ext
   astrometric uncertainty and correlation retrieval for the two Project VI
   `validation_priority_A` candidates, including RV provenance, covariance
   matrix checks, and readiness for later correlated astrometric Monte Carlo.
+- `project_vi_priority_a_correlated_astrometric_mc.md` — Documents the Project VI
+  Priority-A correlated astrometric Monte Carlo using Gaia parallax, pmra, and
+  pmdec covariance with fixed RA, Dec, and LAMOST radial velocity.
 
 ## Project V reports
 

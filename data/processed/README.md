@@ -66,6 +66,16 @@
 - `project_vi_priority_a_field_inventory.csv` — Field-level Project VI audit
   recording source table, availability, value, unit, provenance, missingness,
   and intended MC role for requested Gaia and LAMOST uncertainty inputs.
+- `project_vi_correlated_mc_draws.csv` — Per-draw Project VI Priority-A
+  correlated astrometric Monte Carlo table for 200 draws per target, jointly
+  sampling Gaia parallax, pmra, and pmdec with fixed RA, Dec, and LAMOST radial
+  velocity.
+- `project_vi_correlated_mc_candidate_summary.csv` — Candidate-level Project VI
+  correlated MC summary with median/p16/p84 orbit quantities and diagnostic
+  threshold probabilities.
+- `project_vi_correlated_mc_mode_comparison.csv` — Comparison between the
+  parallax-only prototype and the correlated astrometric, RV-fixed mode,
+  including median shifts, interval widths, and success fractions.
 
 - `project_v_advanced_clustering_feature_audit.csv` — Feature-level completeness, distribution, scaling, and clustering-role audit for the Project V core and extended feature spaces.
 - `project_v_core_feature_correlations.csv` — Pearson correlation matrix for the five Project V core clustering features.

@@ -129,3 +129,8 @@ Each notebook should include:
   astrometric uncertainties and correlation coefficients for the two Project VI
   `validation_priority_A` candidates, builds covariance-ready inputs, and checks
   the parallax/pmra/pmdec covariance matrices without running Monte Carlo draws.
+
+- `33_project_vi_priority_a_correlated_astrometric_mc.ipynb` — Runs the Project VI
+  Priority-A correlated astrometric Monte Carlo for the two
+  `validation_priority_A` candidates, jointly sampling Gaia parallax, pmra, and
+  pmdec while keeping RA, Dec, and LAMOST radial velocity fixed.

@@ -69,6 +69,30 @@ ready to use with the current Project II convention of LAMOST RV central values.
 No correlated Monte Carlo sampling or new classification robustness conclusion
 was produced in this retrieval stage.
 
+### Project VI Priority-A Correlated Astrometric Monte Carlo
+
+Implemented the first correlated astrometric Monte Carlo for the two Project VI
+`validation_priority_A` candidates in
+`notebooks/33_project_vi_priority_a_correlated_astrometric_mc.ipynb`.
+
+The enabled mode is `correlated_gaia_astrometry_rv_fixed`. It runs 200 draws per
+candidate with a fixed random seed, jointly samples Gaia `parallax`, `pmra`, and
+`pmdec` using the retrieved covariance matrices, and keeps RA, Dec, and the
+LAMOST radial-velocity central value fixed.
+
+Generated outputs:
+
+- `data/processed/project_vi_correlated_mc_draws.csv`
+- `data/processed/project_vi_correlated_mc_candidate_summary.csv`
+- `data/processed/project_vi_correlated_mc_mode_comparison.csv`
+- `figures/project_vi_correlated_mc_lz_lperp.png`
+- `figures/project_vi_correlated_mc_orbit_uncertainty.png`
+- `figures/project_vi_mc_mode_comparison.png`
+- `report/project_vi_priority_a_correlated_astrometric_mc.md`
+
+The correlated MC remains an astrometry-correlated, RV-fixed validation step,
+not a full six-dimensional observational uncertainty propagation.
+
 ## 2026-06-05
 
 ### Project Initialization
